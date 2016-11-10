@@ -1,0 +1,14 @@
+.row{
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  text-align:center;
+}
+#item{
+  height: 300px;
+}
+.img :hover {
+    opacity: 0;
+    background-color: yellow;
+}
