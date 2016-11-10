@@ -12,3 +12,13 @@
     opacity: 0;
     background-color: yellow;
 }
+
+.recommendation-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.preferencesection {
+    border-style: inset;
+
+}
