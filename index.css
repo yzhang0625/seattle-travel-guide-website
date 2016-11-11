@@ -9,11 +9,11 @@
   height: 300px;
 }
 
-.row img{
+#item img{
   filter:blur(3px);
   transition-duration:12s;
 }
-.row img:hover{
+#item img:hover{
   filter:none; 
   filter:drop-shadow(8px 8px 10px grey);
 }
