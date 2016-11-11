@@ -9,6 +9,16 @@
   height: 300px;
 }
 
+.row img{
+  filter:blur(3px);
+  transition-duration:12s;
+}
+.row img:hover{
+  filter:none; 
+  filter:drop-shadow(8px 8px 10px grey);
+}
+
+
 .recommendation-container {
     display: flex;
     flex-direction: column;
