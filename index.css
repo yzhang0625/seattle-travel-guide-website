@@ -8,10 +8,6 @@
 #item{
   height: 300px;
 }
-.img :hover {
-    opacity: 0;
-    background-color: yellow;
-}
 
 .recommendation-container {
     display: flex;
@@ -22,3 +18,105 @@
     border-style: inset;
 
 }
+
+.left-image-effect {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    float: left;
+    margin-right:20px;
+    background-color: dimgray;
+}
+
+.left-image-effect p, .left-image-effect h2 {
+    color: #fff;
+    padding: 10px;
+    left: -20px;
+    position: relative;
+}
+
+.left-image-effect p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    text-align: left;
+}
+
+.left-image-effect h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    text-align: left;
+}
+
+.left-image-effect img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: -12px 0;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+}
+
+.left-image-effect img.top:hover {
+    bottom:-100px;
+    padding-top:100px
+}
+
+ul {
+    list-style-type: none;
+}
+
+.right-image-effect {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    float: left;
+    margin-right:20px;
+    background-color: dimgray;
+}
+
+.right-image-effect p, .right-image-effect h2 {
+    color: #fff;
+    padding: 8px;
+    left: -20px;
+    position: relative;
+}
+
+.right-image-effect p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    text-align: left;
+}
+
+.right-image-effect h2 {
+    font-size: 20px;
+    line-height: 16px;
+    margin: 0;
+    text-align: left;
+}
+
+.right-image-effect img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: -12px 0;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+}
+
+.right-image-effect img.top:hover {
+    bottom:-80px;
+    padding-top:80px
+}
+
+
