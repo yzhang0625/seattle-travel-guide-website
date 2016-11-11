@@ -26,7 +26,7 @@
     overflow: hidden;
     float: left;
     margin-right:20px;
-    background-color: dimgray;
+    background-color: #57A53C;
 }
 
 .left-image-effect p, .left-image-effect h2 {
@@ -78,7 +78,7 @@ ul {
     overflow: hidden;
     float: left;
     margin-right:20px;
-    background-color: dimgray;
+    background-color: #57A53C;
 }
 
 .right-image-effect p, .right-image-effect h2 {
