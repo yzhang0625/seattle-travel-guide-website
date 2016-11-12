@@ -12,7 +12,7 @@
     overflow: hidden;
     float: left;
     margin-right:20px;
-    background-color: #57A53C;
+    background-color: #99CCBF;
 }
 
 .left-image-effect p, .left-image-effect h2 {
@@ -64,7 +64,7 @@ ul {
     overflow: hidden;
     float: left;
     margin-right:20px;
-    background-color: #57A53C;
+    background-color: #99CCBF;
 }
 
 .right-image-effect p, .right-image-effect h2 {
@@ -112,7 +112,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #57A53C;
+    background-color: #99CCBF;
 }
 
 .navi-yang li {
@@ -129,7 +129,7 @@ ul {
 
 .navi-yang li a:hover, .dropdown-yang:hover .dropbtn-yang {
     background-color: white;
-    color: #57A53C;
+    color: #99CCBF;
 }
 
 .navi-yang li.dropdown-yang {
@@ -185,7 +185,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
-  background-color: #57A53C;
+  background-color: #99CCBF;
   padding: 55px 50px;
   margin-top:80px;
 }
