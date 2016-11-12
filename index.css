@@ -172,7 +172,7 @@ ul {
 }
 
 #item img{
-    filter:blur(2px);
+    filter:blur(1.5px);
     transition-duration:12s;
 }
 #item img:hover{
