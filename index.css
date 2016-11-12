@@ -1,26 +1,11 @@
-.row{
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
-  text-align:center;
-}
-#item{
-  height: 300px;
-}
-
-#item img{
-  filter:blur(3px);
-  transition-duration:12s;
-}
-#item img:hover{
-  filter:none; 
-  filter:drop-shadow(8px 8px 10px grey);
-}
 
 
-.preferencesection {
-    border-style: inset;
+
+/*-------------------------------------------- style for Nan -----------------------------------------*/
+
+#recommendation {
+    margin-bottom: 100px;
+    margin-top: 100px;
 
 }
 
@@ -178,7 +163,27 @@ ul {
     display: block;
 }
 
-/*-------------------------------------------- style for ** -----------------------------------------*/
+/*-------------------------------------------- style for Yihong -----------------------------------------*/
+.row{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    text-align:center;
+}
+#item{
+    height: 300px;
+}
+
+#item img{
+    filter:blur(3px);
+    transition-duration:12s;
+}
+#item img:hover{
+    filter:none;
+    filter:drop-shadow(8px 8px 10px grey);
+}
+
 .container9{
   display: -webkit-flex;
   display: flex;
@@ -253,11 +258,8 @@ ul {
   font: 13px sans-serif;
 }
 
-#recommendation {
-    margin-bottom: 100px;
-    margin-top: 100px;
 
-}
+
 
 
 
