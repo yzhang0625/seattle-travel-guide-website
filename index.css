@@ -172,7 +172,7 @@ ul {
 }
 
 #item img{
-    filter:blur(3px);
+    filter:blur(2px);
     transition-duration:12s;
 }
 #item img:hover{
@@ -181,7 +181,6 @@ ul {
 }
 
 .container9{
-<<<<<<< HEAD
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
@@ -189,15 +188,6 @@ ul {
   background-color: #99CCBF;
   padding: 55px 50px;
   margin-top:80px;
-=======
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    background-color: #99CCBF;
-    padding: 55px 50px;
-    margin-top:80px;
->>>>>>> 4bc71b4474ac48f918d0c8608563c0517767df5d
 }
 
 .left{
