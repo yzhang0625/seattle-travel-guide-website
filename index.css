@@ -19,11 +19,6 @@
 }
 
 
-.recommendation-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .preferencesection {
     border-style: inset;
 
