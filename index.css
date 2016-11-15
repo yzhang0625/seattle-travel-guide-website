@@ -55,6 +55,7 @@
 
 ul {
     list-style-type: none;
+    margin: auto;
 }
 
 .right-image-effect {
@@ -104,6 +105,76 @@ ul {
     bottom:-80px;
     padding-top:80px
 }
+
+
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #99CCBF;
+    border: 0;
+    font-size: 16px !important;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #ffffff !important;
+}
+.navbar-nav li a:hover {
+    background-color: black !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar li a {
+    display: block;
+}
+
+.dropdown-menu {
+    background-color: #99CCBF;
+}
+
+.dropdown-menu li a:hover {
+    background-color: black;
+}
+
+
+#homegif {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.arrow-center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.gifword {
+    font-size: 50px;
+    color: #ffffff;
+    border: 5px inset white;
+    text-align: center;
+}
+
+.down-arrow {
+    color: white;
+    font-size: 50px;
+}
+
+@media (max-width: 600px) {
+    .arrow-center{
+        display: none;
+    }
+}
+
+
 
 /*-------------------------------------------- style for Yang -----------------------------------------*/
 
@@ -158,6 +229,8 @@ ul {
 .dropdown-yang:hover .dropdown-content-yang {
     display: block;
 }
+
+
 
 /*-------------------------------------------- style for Yihong -----------------------------------------*/
 .row{
