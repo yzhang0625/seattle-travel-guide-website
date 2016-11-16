@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="index.css">
+    <script src="indexjQuery.js"></script>
 </head>
 
 
 <body>
 
-<div class="row">
+
+
+<!--div class="row">
     <div class="col-sm-12">
         <div class = "navi-yang">
             <ul>
@@ -44,7 +47,75 @@
             </ul>
         </div>
     </div>
+</div-->
+
+
+<div id="homegif" class="text-center">
+    <img class="gifimage" src="http://i.imgur.com/uSTHZf7.gif" alt="SeattleSkyline"
+         width=100%>
+    <div class="arrow-center">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <p class="gifword"><b>Explore Seattle</b></p>
+                <a class="down-arrow" href="#navigation" data-toggle="tooltip" title="To TOP">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+
+            </div>
+            <div class="col-sm-4"></div>
+
+        </div>
+
+
+    </div>
+
 </div>
+
+<nav id="navigation" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="Pioneer-Icon.png" alt="teamlogo" width="40px" height="40px"> </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#homegif">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Things to do
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Signature Place</a></li>
+                        <li><a href="#">Outdoor</a></li>
+                        <li><a href="#">Family Fun</a></li>
+                        <li><a href="#">Arts & Culture</a></li>
+                        <li><a href="#">Game & Sports</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Foods & Drinks</a></li>
+
+                <li><a href="#">Hotels & Stay</a></li>
+
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Transportation
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Airport</a></li>
+                        <li><a href="#">Ferry</a></li>
+                        <li><a href="#">Bus</a></li>
+                        <li><a href="#">Link Light Rail</a></li>
+                        <li><a href="#">Train</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -55,7 +126,8 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="img-responsive carousel-pic" src="http://i.imgur.com/uSTHZf7.gif" alt="SeattleSkyline" width=100%>
+            <img class="img-responsive carousel-pic" src="SeattleSkyline.jpg" alt="SeattleSkyline"
+                 width=100%>
             <div class="carousel-caption">
                 <h3><b>Seattle Skyline</b></h3>
             </div>
@@ -74,7 +146,6 @@
                 <h3><b>Mountain Rainier From UW Seattle</b></h3>
             </div>
         </div>
-
 
 
     </div>
@@ -132,7 +203,8 @@
                 <ul class="right-image-effect">
                     <li>
                         <h2 class="zero">Pike Place Market</h2>
-                        <p class="zero">Pike Place Market is one of the oldest continuously operated public farmers' markets in the United States.</p>
+                        <p class="zero">Pike Place Market is one of the oldest continuously operated public farmers'
+                            markets in the United States.</p>
                     </li>
 
                     <li><img class="top img-responsive"
@@ -146,7 +218,8 @@
                 <ul class="right-image-effect">
                     <li>
                         <h2 class="zero">Mountain Rainier</h2>
-                        <p class="zero">Mount Rainier National Park - an expansive Washington state reserve southeast of Seattle.</p>
+                        <p class="zero">Mount Rainier National Park - an expansive Washington state reserve southeast of
+                            Seattle.</p>
                     </li>
 
                     <li><img class="top img-responsive"
@@ -163,78 +236,78 @@
 
 <div class="plan container">
     <div class="row">
-    	<div class="col-sm-3" id="item">
-        	<img src="https://assets3.thrillist.com/v1/image/1298308/size/tmg-slideshow_l.jpg" style="height:230px"
-             class="img-responsive" alt="pic1">
-        	<h2>Best Burgers</h2>
-        	<p>Some of the shops you'll recognize as burger havens</p>
-      		<br>
-    	</div>
+        <div class="col-sm-3" id="item">
+            <img src="https://assets3.thrillist.com/v1/image/1298308/size/tmg-slideshow_l.jpg" style="height:230px"
+                 class="img-responsive" alt="pic1">
+            <h2>Best Burgers</h2>
+            <p>Some of the shops you'll recognize as burger havens</p>
+            <br>
+        </div>
 
-    	<div class="col-sm-3" id="item">
-        	<img src="https://wheresmybackpack.files.wordpress.com/2013/05/seattle-blue-trees.jpg" style="height:230px"
-             class="img-responsive" alt="">
-        	<h2>Westlake Center</h2>
-        	<p>Indulge in brands you love at the best shopping mall in Seattle</p>
-    	</div>
+        <div class="col-sm-3" id="item">
+            <img src="https://wheresmybackpack.files.wordpress.com/2013/05/seattle-blue-trees.jpg" style="height:230px"
+                 class="img-responsive" alt="">
+            <h2>Westlake Center</h2>
+            <p>Indulge in brands you love at the best shopping mall in Seattle</p>
+        </div>
 
-    	<div class="col-sm-3" id="item">
-        	<img src="https://s-media-cache-ak0.pinimg.com/originals/c9/77/6d/c9776d89ad6861063875850aa962db6b.jpg"
-             style="height:230px" class="img-responsive" alt="">
-        	<h2>Live life float</h2>
-        	<p>Seattle Houseboat might be one of the coolest places to stay</p>
-    	</div>
+        <div class="col-sm-3" id="item">
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/c9/77/6d/c9776d89ad6861063875850aa962db6b.jpg"
+                 style="height:230px" class="img-responsive" alt="">
+            <h2>Live life float</h2>
+            <p>Seattle Houseboat might be one of the coolest places to stay</p>
+        </div>
 
-    	<div class="col-sm-3" id="item">
-        	<img src="http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/istock_000008381799_small.jpg"
-             style="height:230px" class="img-responsive" alt="">
-        	<h2>Space Needle</h2>
-        	<p>A landmark of the Pacific Northwest, and an icon of Seattle.</p>
-    	</div>
-   </div>
+        <div class="col-sm-3" id="item">
+            <img src="http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/istock_000008381799_small.jpg"
+                 style="height:230px" class="img-responsive" alt="">
+            <h2>Space Needle</h2>
+            <p>A landmark of the Pacific Northwest, and an icon of Seattle.</p>
+        </div>
+    </div>
 </div>
 
 <footer>
-  <div class="container9">
-    <div class="left">
-      <p>Seattle Pioneer</p>
-      <div class="sitemap">
-        <a href="#">Welcome</a>
-        <a href="#">Things to do</a>
-        <a href="#">Food&Drink</a>
-        <a href="#">Hotel</a>  
-        <a href="#">Transportation</a>
-      </div>
-      <p>Seattle Pioneer © 2016</p>
-    </div>
-    <div class="center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p class="info">Terry Ave, Seattle</p>
-      </div>
-      <div>
-        <i class="fa fa-phone"></i>
-        <p class="info">888-888-8888</p>
-      </div>
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p class="info">xxx@xxx.com</p>
-      </div>
-    </div> 
-    <div class="right">
-      <span>About the website</span>
-      <p class="intro">A website that people can get information about seattle.</p>
-      <div class="icon">
-        <a href = "#">
-          <i class="fa fa-facebook"></i></a>
-        <a href = "#">
-          <i class="fa fa-twitter"></i></a>
-        <a href = "#">
-          <i class="fa fa-linkedin"></i></a>
-        <a href = "#">
-          <i class="fa fa-github"></i></a>
-    </div> 
-  </div>  
+    <div class="container9">
+        <div class="left">
+            <p>Seattle Pioneer</p>
+            <div class="sitemap">
+                <a href="#">Welcome</a>
+                <a href="#">Things to do</a>
+                <a href="#">Food&Drink</a>
+                <a href="#">Hotel</a>
+                <a href="#">Transportation</a>
+            </div>
+            <p>Seattle Pioneer © 2016</p>
+        </div>
+        <div class="center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p class="info">Terry Ave, Seattle</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p class="info">888-888-8888</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p class="info">xxx@xxx.com</p>
+            </div>
+        </div>
+        <div class="right">
+            <span>About the website</span>
+            <p class="intro">A website that people can get information about seattle.</p>
+            <div class="icon">
+                <a href="#">
+                    <i class="fa fa-facebook"></i></a>
+                <a href="#">
+                    <i class="fa fa-twitter"></i></a>
+                <a href="#">
+                    <i class="fa fa-linkedin"></i></a>
+                <a href="#">
+                    <i class="fa fa-github"></i></a>
+            </div>
+        </div>
 </footer>
 
 </body>
