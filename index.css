@@ -1,8 +1,7 @@
 /*-------------------------------------------- style for Nan -----------------------------------------*/
 
-#recommendation {
-    margin-bottom: 100px;
-    margin-top: 100px;
+#recommendation, #planyourtrip {
+    margin-top: 3%;
 }
 
 .left-image-effect {
@@ -55,7 +54,7 @@
 
 ul {
     list-style-type: none;
-    margin: auto;
+
 }
 
 .right-image-effect {
@@ -115,7 +114,7 @@ ul {
     border: 0;
     font-size: 16px !important;
     letter-spacing: 2px;
-    opacity: 0.9;
+    opacity: 1.0;
 }
 
 .navbar li a, .navbar .navbar-brand {
@@ -163,6 +162,7 @@ ul {
     text-align: center;
 }
 
+
 .down-arrow {
     color: white;
     font-size: 50px;
@@ -172,6 +172,14 @@ ul {
     .arrow-center{
         display: none;
     }
+}
+.inner {
+    margin-top:31px;
+    border-bottom: 2px inset #99CCBF;
+}
+
+.separateline {
+    margin-top: 3%;
 }
 
 
