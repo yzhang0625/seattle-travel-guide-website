@@ -9,123 +9,244 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="subtitle.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="index.css">
+    <script src="indexjQuery.js"></script>
 </head>
 
 <style>
-.jumbotron{
-  background-image:url("subtitle-header/space.jpg");
-  background-size:100% 100%;
-}
+    .jumbotron {
+        background-image: url("subtitle-header/space.jpg");
+        background-size: 100% 100%;
+    }
 </style>
 
 <body>
+
+<div id="navigation">
+    <nav class="navbar navbar-default hidden-sm hidden-md hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#homegif">Home</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Things to do
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Signature Place</a></li>
+                            <li><a href="#">Outdoor</a></li>
+                            <li><a href="#">Family Fun</a></li>
+                            <li><a href="#">Arts & Culture</a></li>
+                            <li><a href="#">Game & Sports</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Foods & Drinks</a></li>
+
+                    <li><a href="#">Hotels & Stay</a></li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Transportation
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Airport</a></li>
+                            <li><a href="#">Ferry</a></li>
+                            <li><a href="#">Bus</a></li>
+                            <li><a href="#">Link Light Rail</a></li>
+                            <li><a href="#">Train</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar">
+        <div class="row alignitem">
+            <div class="col-sm-5">
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Things to do
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Signature Place</a></li>
+                            <li><a href="#">Outdoor</a></li>
+                            <li><a href="#">Family Fun</a></li>
+                            <li><a href="#">Arts & Culture</a></li>
+                            <li><a href="#">Game & Sports</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Foods & Drinks</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-2 col-xs-12">
+                <ul class="nav">
+                    <li><img src="Pioneer-Icon.png" alt="teamlogo" width="100px" height="100px"></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-5">
+                <ul class="nav navbar-nav navbar-left hidden-xs">
+                    <li><a href="#">Hotels & Stay</a></li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Transportation
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Airport</a></li>
+                            <li><a href="#">Ferry</a></li>
+                            <li><a href="#">Bus</a></li>
+                            <li><a href="#">Link Light Rail</a></li>
+                            <li><a href="#">Train</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <div>
-  <div class="jumbotron">
-    <h1 style="color:#ffffff">Signature Places</h1> 
-  </div>
-  
-  <div class="container-fluid">
-    <div class="row">
-     <div class="col-sm-7" id="pike-pic">
-     </div>
-     <div class="col-sm-5" id="col-sm-5-text">
-       <p><a class="hilt" href="http://pikeplacemarket.org/" target="_blank">Pike Place Market</a> is a public market overlooking the Elliott Bay waterfront in Seattle, Washington, United States. The Market opened August 17, 1907, and is one of the oldest continuously operated public farmers' markets in the United States. It is a place of business for many small farmers, craftspeople and merchants. Named after the central street, Pike Place runs northwest from Pike Street to Virginia Street. With more than 10 million visitors annually, Pike Place Market is Seattle's most popular tourist destination and is the 33rd most visited tourist attraction in the world.</p>
-     </div>
+    <div class="jumbotron">
+        <h1 style="color:#ffffff">Signature Places</h1>
     </div>
-  </div>
 
-  <div class="container-fluid">
-    <div class="row">
-     <div class="col-sm-7" id="space-pic">
-     </div>
-     <div class="col-sm-5" id="col-sm-5-text">
-       <p><a class="hilt" href="https://www.spaceneedle.com/home/" target="_blank">The Space Needle</a> is an observation tower in Seattle, Washington, a landmark of the Pacific Northwest, and an icon of Seattle. It was built in the Seattle Center for the 1962 World's Fair, which drew over 2.3 million visitors, when nearly 20,000 people a day used its elevators.Visitors can reach the top of the Space Needle by elevators that travel at 10 miles per hour (4.5 m/s). The trip takes 41 seconds.</p>
-     </div>
+    <div class="container-fluid">
+        <div class="row rowcontent">
+            <div class="col-sm-7" id="pike-pic">
+            </div>
+            <div class="col-sm-5" id="col-sm-5-text">
+                <p><a class="hilt" href="http://pikeplacemarket.org/" target="_blank">Pike Place Market</a> is a public
+                    market overlooking the Elliott Bay waterfront in Seattle, Washington, United States. The Market
+                    opened August 17, 1907, and is one of the oldest continuously operated public farmers' markets in
+                    the United States. It is a place of business for many small farmers, craftspeople and merchants.
+                    Named after the central street, Pike Place runs northwest from Pike Street to Virginia Street. With
+                    more than 10 million visitors annually, Pike Place Market is Seattle's most popular tourist
+                    destination and is the 33rd most visited tourist attraction in the world.</p>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="container-fluid">
-    <div class="row">
-     <div class="col-sm-7" id="uw-pic">
-     </div>
-     <div class="col-sm-5" id="col-sm-5-text">
-       <p><a class="hilt" href="http://www.washington.edu/" target="_blank">The University of Washington</a>, commonly referred to as simply Washington, UW, or informally U-Dub, is a public flagship research university based in Seattle, Washington, United States. Founded in 1861, Washington is one of the oldest universities on the West Coast.The university has three campuses: the oldest and largest in the University District of Seattle and two others in Tacoma and Bothell. Washington is a member of the Association of American Universities. In athletics, the university competes in the NCAA Division I Pac-12 Conference (Pac-12). Its athletic teams are called the Huskies.</p>
-     </div>
+    <div class="container-fluid">
+        <div class="row rowcontent">
+            <div class="col-sm-7" id="space-pic">
+            </div>
+            <div class="col-sm-5" id="col-sm-5-text">
+                <p><a class="hilt" href="https://www.spaceneedle.com/home/" target="_blank">The Space Needle</a> is an
+                    observation tower in Seattle, Washington, a landmark of the Pacific Northwest, and an icon of
+                    Seattle. It was built in the Seattle Center for the 1962 World's Fair, which drew over 2.3 million
+                    visitors, when nearly 20,000 people a day used its elevators.Visitors can reach the top of the Space
+                    Needle by elevators that travel at 10 miles per hour (4.5 m/s). The trip takes 41 seconds.</p>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="container-fluid">
-    <div class="row">
-     <div class="col-sm-7" id="starb-pic">
-     </div>
-     <div class="col-sm-5" id="col-sm-5-text">
-       <p><a class="hilt" href="https://www.starbucks.com/" target="_blank">Starbucks</a> Corporation is an American coffee company and coffeehouse chain. Starbucks was founded in Seattle, Washington in 1971. Today it operates 23,768 locations worldwide. Starbucks first became profitable in Seattle in the early 1980s, and despite an initial economic downturn with its expansion into the Midwest and British Columbia in the late 1980s, the company experienced revitalized prosperity with its entry into California in the early 1990s. The first Starbucks location outside North America opened in Tokyo in 1996; overseas properties now constitute almost one third of its stores. The company had opened an average of two new locations daily between 1987 and 2007</p>
-     </div>
+    <div class="container-fluid">
+        <div class="row rowcontent">
+            <div class="col-sm-7" id="uw-pic">
+            </div>
+            <div class="col-sm-5" id="col-sm-5-text">
+                <p><a class="hilt" href="http://www.washington.edu/" target="_blank">The University of Washington</a>,
+                    commonly referred to as simply Washington, UW, or informally U-Dub, is a public flagship research
+                    university based in Seattle, Washington, United States. Founded in 1861, Washington is one of the
+                    oldest universities on the West Coast.The university has three campuses: the oldest and largest in
+                    the University District of Seattle and two others in Tacoma and Bothell. Washington is a member of
+                    the Association of American Universities. In athletics, the university competes in the NCAA Division
+                    I Pac-12 Conference (Pac-12). Its athletic teams are called the Huskies.</p>
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <div class="container">
-    <div class="row">
-     <div class="col-sm-5" id="sport">
-       <div class="text">
-       <h2>Definitely cool if you're a sports fan</h2>
-       <a href=""><button class="button">Learn More</button></a>
-       </div>
-     </div>
-     <div class="col-sm-2"></div>
-     <div class="col-sm-5" id="family">
-       <div class="text">
-       <h2>Traveling with family</h2>
-       <a href=""><button class="button">Learn More</button></a>
-       </div>
-     </div> 
+
+    <div class="container-fluid">
+        <div class="row rowcontent">
+            <div class="col-sm-7" id="starb-pic">
+            </div>
+            <div class="col-sm-5" id="col-sm-5-text">
+                <p><a class="hilt" href="https://www.starbucks.com/" target="_blank">Starbucks</a> Corporation is an
+                    American coffee company and coffeehouse chain. Starbucks was founded in Seattle, Washington in 1971.
+                    Today it operates 23,768 locations worldwide. Starbucks first became profitable in Seattle in the
+                    early 1980s, and despite an initial economic downturn with its expansion into the Midwest and
+                    British Columbia in the late 1980s, the company experienced revitalized prosperity with its entry
+                    into California in the early 1990s. The first Starbucks location outside North America opened in
+                    Tokyo in 1996; overseas properties now constitute almost one third of its stores. The company had
+                    opened an average of two new locations daily between 1987 and 2007</p>
+            </div>
+        </div>
     </div>
-  </div>
-  
+
+    <div class="container">
+        <div class="row rowcontent">
+            <div class="col-sm-5" id="sport">
+                <div class="text">
+                    <h2>Definitely cool if you're a sports fan</h2>
+                    <a href="">
+                        <button class="button">Learn More</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5" id="family">
+                <div class="text">
+                    <h2>Traveling with family</h2>
+                    <a href="">
+                        <button class="button">Learn More</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <footer>
-  <div class="container9">
-    <div class="left">
-      <p>Seattle Pioneer</p>
-      <div class="sitemap">
-        <a href="#">Welcome</a>
-        <a href="#">Things to do</a>
-        <a href="#">Food&Drink</a>
-        <a href="#">Hotel</a>  
-        <a href="#">Transportation</a>
-      </div>
-      <p>Seattle Pioneer © 2016</p>
-    </div>
-    <div class="center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p class="info">Terry Ave, Seattle</p>
-      </div>
-      <div>
-        <i class="fa fa-phone"></i>
-        <p class="info">888-888-8888</p>
-      </div>
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p class="info">xxx@xxx.com</p>
-      </div>
-    </div> 
-    <div class="right">
-      <span>About the website</span>
-      <p class="intro">A website that people can get information about seattle.</p>
-      <div class="icon">
-        <a href = "#">
-          <i class="fa fa-facebook"></i></a>
-        <a href = "#">
-          <i class="fa fa-twitter"></i></a>
-        <a href = "#">
-          <i class="fa fa-linkedin"></i></a>
-        <a href = "#">
-          <i class="fa fa-github"></i></a>
-    </div> 
-  </div>  
+    <div class="container9">
+        <div class="left">
+            <p>Seattle Pioneer</p>
+            <div class="sitemap">
+                <a href="#">Welcome</a>
+                <a href="#">Things to do</a>
+                <a href="#">Food&Drink</a>
+                <a href="#">Hotel</a>
+                <a href="#">Transportation</a>
+            </div>
+            <p>Seattle Pioneer © 2016</p>
+        </div>
+        <div class="center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p class="info">Terry Ave, Seattle</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p class="info">888-888-8888</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p class="info">xxx@xxx.com</p>
+            </div>
+        </div>
+        <div class="right">
+            <span>About the website</span>
+            <p class="intro">A website that people can get information about seattle.</p>
+            <div class="icon">
+                <a href="#">
+                    <i class="fa fa-facebook"></i></a>
+                <a href="#">
+                    <i class="fa fa-twitter"></i></a>
+                <a href="#">
+                    <i class="fa fa-linkedin"></i></a>
+                <a href="#">
+                    <i class="fa fa-github"></i></a>
+            </div>
+        </div>
 </footer>
 
 </body>
