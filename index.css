@@ -134,6 +134,8 @@ ul {
 
 .dropdown-menu {
     background-color: #99CCBF;
+    border-color: #99CCBF;
+    width: 180px;
 }
 
 .dropdown-menu li a:hover {
