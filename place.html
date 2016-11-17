@@ -3,29 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title id="title">Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="detail.css">
 </head>
 <script src="index.js"></script>
 <script src = "data/place-data.js"></script>
 
 <body onload="loadPlaceInformation()">
-    <p id = "name">name of the place</p>
-    <p id = "introduction"></p>
-
-    <a id = "url" href="#" data-content="url">URL of the Place</a>
-
-    <div>
-        <p id = "rating">Overall Rating : </p>
-        <img id = "rating_img_url" src="">
+  <div class="container">
+    <div class="row">
+       <div class="col-sm-7">
+           
+       </div>
+       <div class="col-sm-5">
+    	  <p id = "name">name of the place</p>
+          <p id = "rating">Overall Rating : </p>
+          <img id = "rating_img_url" src="">
+    	  <p id = "introduction"></p>
+          <a id = "url" href="#" data-content="url"><button class="button">Go Visit</button></a>
+       </div>
     </div>
+  </div>
 
-    <div>
-        <p id = "user_rating">This user rating: </p>
-        <img id = "user_rating_image_url" src="">
-        <p id = "user_excerpt">This user review</p>
-        <img id = "snippet_image_url" src="">
-        <img id = "image_url" src="">
-        <p id = "location">Will update later</p>
+  <div class="container">
+    <div class="row">
+       <div class="col-sm-5">
+           <p id = "user_rating">This user rating: </p>
+           <img id = "user_rating_image_url" src="">
+       </div>
+       <div class="col-sm-7">
+           <p id = "user_excerpt">This user review</p>
+           <img id = "snippet_image_url" src="">
+           <img id = "image_url" src="">
+           <p id = "location">Will update later</p>
+       </div>
+     </div>
+   </div>
+
+   <div class="container">
+     <div class="row">
+        <div class="col-sm-4">
+           <div style="overflow:hidden; height:300px;resize:none;max-width:100%;"><div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Space+Needle,+Seattle,+WA,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="embed-map-code" rel="nofollow" href="https://www.interserver-coupons.com" id="enable-map-data">https://www.interserver-coupons.com</a><style>#gmap-canvas img{max-width:none!important;background:none!important;}</style></div><script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=c87dcbfe-aa6a-6bd9-23ed-4358715f6f86&c=embed-map-code&u=1479342366" defer="defer" async="async"></script>
+        </div>
+        <div class="col-sm-4">
+           
+        </div>
+        <div class="col-sm-4">
+           
+        </div>
+     </div>
+   </div>
+
+<footer>
+  <div class="container9">
+    <div class="left">
+      <p>Seattle Pioneer</p>
+      <div class="sitemap">
+        <a href="#">Welcome</a>
+        <a href="#">Things to do</a>
+        <a href="#">Food&Drink</a>
+        <a href="#">Hotel</a>  
+        <a href="#">Transportation</a>
+      </div>
+      <p>Seattle Pioneer © 2016</p>
     </div>
-
+    <div class="center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p class="info">Terry Ave, Seattle</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p class="info">888-888-8888</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p class="info">xxx@xxx.com</p>
+      </div>
+    </div> 
+    <div class="right">
+      <span>About the website</span>
+      <p class="intro">A website that people can get information about seattle.</p>
+      <div class="icon">
+        <a href = "#">
+          <i class="fa fa-facebook"></i></a>
+        <a href = "#">
+          <i class="fa fa-twitter"></i></a>
+        <a href = "#">
+          <i class="fa fa-linkedin"></i></a>
+        <a href = "#">
+          <i class="fa fa-github"></i></a>
+    </div> 
+  </div>  
+</footer>
 </body>
 </html>
