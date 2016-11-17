@@ -17,7 +17,6 @@
 <body>
 
 
-
 <!--div class="row">
     <div class="col-sm-12">
         <div class = "navi-yang">
@@ -72,50 +71,98 @@
 
 </div>
 
-<nav id="navigation" class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="Pioneer-Icon.png" alt="teamlogo" width="40px" height="40px"> </a>
+<div id="navigation">
+    <nav class="navbar navbar-default hidden-sm hidden-md hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#homegif">Home</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Things to do
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Signature Place</a></li>
+                            <li><a href="#">Outdoor</a></li>
+                            <li><a href="#">Family Fun</a></li>
+                            <li><a href="#">Arts & Culture</a></li>
+                            <li><a href="#">Game & Sports</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Foods & Drinks</a></li>
+
+                    <li><a href="#">Hotels & Stay</a></li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Transportation
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Airport</a></li>
+                            <li><a href="#">Ferry</a></li>
+                            <li><a href="#">Bus</a></li>
+                            <li><a href="#">Link Light Rail</a></li>
+                            <li><a href="#">Train</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#homegif">Home</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Things to do
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Signature Place</a></li>
-                        <li><a href="#">Outdoor</a></li>
-                        <li><a href="#">Family Fun</a></li>
-                        <li><a href="#">Arts & Culture</a></li>
-                        <li><a href="#">Game & Sports</a></li>
-                    </ul>
-                </li>
+    <div class="navbar">
+        <div class="row alignitem">
+            <div class="col-sm-5">
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Things to do
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Signature Place</a></li>
+                            <li><a href="#">Outdoor</a></li>
+                            <li><a href="#">Family Fun</a></li>
+                            <li><a href="#">Arts & Culture</a></li>
+                            <li><a href="#">Game & Sports</a></li>
+                        </ul>
+                    </li>
 
-                <li><a href="#">Foods & Drinks</a></li>
+                    <li><a href="#">Foods & Drinks</a></li>
+                </ul>
+            </div>
 
-                <li><a href="#">Hotels & Stay</a></li>
+            <div class="col-sm-2 col-xs-12">
+                <ul class="nav">
+                    <li><img src="Pioneer-Icon.png" alt="teamlogo" width="70px" height="70px"></li>
+                </ul>
+            </div>
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Transportation
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Airport</a></li>
-                        <li><a href="#">Ferry</a></li>
-                        <li><a href="#">Bus</a></li>
-                        <li><a href="#">Link Light Rail</a></li>
-                        <li><a href="#">Train</a></li>
-                    </ul>
-                </li>
+            <div class="col-sm-5">
+                <ul class="nav navbar-nav navbar-left hidden-xs">
+                    <li><a href="#">Hotels & Stay</a></li>
 
-            </ul>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Transportation
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Airport</a></li>
+                            <li><a href="#">Ferry</a></li>
+                            <li><a href="#">Bus</a></li>
+                            <li><a href="#">Link Light Rail</a></li>
+                            <li><a href="#">Train</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
         </div>
     </div>
-</nav>
+</div>
+
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -220,7 +267,8 @@
                 <ul class="right-image-effect">
                     <li>
                         <h2 class="zero">Pike Place Market</h2>
-                        <p class="zero">Pike Place Market is one of the oldest continuously operated public farmers' markets in the United States.</p>
+                        <p class="zero">Pike Place Market is one of the oldest continuously operated public farmers'
+                            markets in the United States.</p>
                     </li>
 
                     <li><img class="top img-responsive"
@@ -234,7 +282,8 @@
                 <ul class="right-image-effect">
                     <li>
                         <h2 class="zero">Mountain Rainier</h2>
-                        <p class="zero">Mount Rainier National Park - an expansive Washington state reserve southeast of Seattle.</p>
+                        <p class="zero">Mount Rainier National Park - an expansive Washington state reserve southeast of
+                            Seattle.</p>
                     </li>
 
                     <li><img class="top img-responsive"
