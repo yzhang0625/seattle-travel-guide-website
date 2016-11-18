@@ -1,5 +1,5 @@
 var spaceNeedle = {
-    introduction: 'The Space Needle is an observation tower in Seattle, Washington, a landmark of the Pacific Northwest, and an icon of Seattle. It was built in the Seattle Center for the 1962 World\'s Fair, which drew over 2.3 million visitors, when nearly 20,000 people a day used its elevators.',
+    introduction: 'The Space Needle is an observation tower in Seattle, Washington, a landmark of the Pacific Northwest, and an icon of Seattle. It was built in the Seattle Center for the 1962 World\'s Fair, which drew over 2.3 million visitors, when nearly 20,000 people a day used its elevators.<br><br>Once the tallest structure west of the Mississippi River, it is 605 ft (184 m) high, 138 ft (42 m) wide, and weighs 9,550 tons. It is built to withstand winds of up to 200 miles per hour (89 m/s) and earthquakes of up to 9.1 magnitude,  as strong as the 1700 Cascadia earthquake. It also has 25 lightning rods. <br><br>It has an observation deck at 520 ft (160 m) and the rotating SkyCity restaurant at 500 ft (150 m). The downtown Seattle skyline, as well as the Olympic and Cascade Mountains, Mount Rainier, Mount Baker, Elliott Bay and surrounding islands can be viewed from the top of the Needle. Photographs of the Seattle skyline often show the Space Needle prominently, above skyscrapers and Mount Rainier.<br><br>Visitors can reach the top of the Space Needle by elevators that travel at 10 miles per hour (4.5 m/s). The trip takes 41 seconds. On windy days, the elevators slow to 5 miles per hour (2.2 m/s). On April 19, 1999, the city\'s Landmarks Preservation Board designated it a historic landmark.',
     is_claimed: true,
     rating: 4,
     mobile_url: 'https://m.yelp.com/biz/space-needle-seattle?adjust_creative=LEPm4uILmdOkj40VttkyYw&utm_campaign=yelp_api&utm_medium=api_v2_business&utm_source=LEPm4uILmdOkj40VttkyYw',
@@ -8,36 +8,38 @@ var spaceNeedle = {
     name: 'Space Needle',
     rating_img_url_small: 'https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
     url: 'https://www.yelp.com/biz/space-needle-seattle?adjust_creative=LEPm4uILmdOkj40VttkyYw&utm_campaign=yelp_api&utm_medium=api_v2_business&utm_source=LEPm4uILmdOkj40VttkyYw',
-    categories:
-        [ [ 'Landmarks & Historical Buildings', 'landmarks' ],
-            [ 'Observatories', 'observatories' ] ],
+    categories: [['Landmarks & Historical Buildings', 'landmarks'],
+        ['Observatories', 'observatories']],
     menu_date_updated: 1472580768,
-    reviews:
-        [ { rating: 4,
-            excerpt: 'This is a nice landmark to visit when in Seattle. Lots of cool history displayed in the entrance with lots of cool facts about the building. \n\nThe cost is...',
-            time_created: 1478733979,
-            rating_image_url: 'https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
-            rating_image_small_url: 'https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
-            user: [Object],
-            rating_image_large_url: 'https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png',
-            id: 'wJIQ43vYuJVkJm36AHMeeg' } ],
+    reviews: [{
+        rating: 4,
+        excerpt: 'This is a nice landmark to visit when in Seattle. Lots of cool history displayed in the entrance with lots of cool facts about the building. \n\nThe cost is...',
+        time_created: 1478733979,
+        rating_image_url: 'https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png',
+        rating_image_small_url: 'https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png',
+        user: [Object],
+        rating_image_large_url: 'https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png',
+        id: 'wJIQ43vYuJVkJm36AHMeeg'
+    }],
     phone: '2069052100',
     snippet_text: 'This is a nice landmark to visit when in Seattle. Lots of cool history displayed in the entrance with lots of cool facts about the building. \n\nThe cost is...',
-    image_url: 'https://s3-media2.fl.yelpcdn.com/bphoto/3adq85lvMhX8Wnk720s74Q/ms.jpg',
+    image_url: 'http://travelchannel.sndimg.com/content/dam/images/travel/fullset/2012/10/21/60/Space-Needle.rend.tccom.966.544.jpeg',
     snippet_image_url: 'https://s3-media2.fl.yelpcdn.com/photo/1r0Q-asM2Ghuy4rf5SIyuA/ms.jpg',
     display_phone: '+1-206-905-2100',
     rating_img_url_large: 'https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png',
     menu_provider: 'single_platform',
     id: 'space-needle-seattle',
     is_closed: false,
-    location:
-    { city: 'Seattle',
-        display_address: [ '400 Broad St', 'Lower Queen Anne', 'Seattle, WA 98109' ],
+    website_url: '<a href=https://www.spaceneedle.com/home/>https://www.spaceneedle.com/home/</a>',
+    location: {
+        city: 'Seattle',
+        display_address: ['400 Broad St', 'Lower Queen Anne', 'Seattle, WA 98109'],
         geo_accuracy: 8,
-        neighborhoods: [ 'Lower Queen Anne' ],
+        neighborhoods: ['Lower Queen Anne'],
         postal_code: '98109',
         country_code: 'US',
-        address: [ '400 Broad St' ],
-        coordinate: { latitude: 47.6204899, longitude: -122.34923 },
-        state_code: 'WA' }
+        address: ['400 Broad St'],
+        coordinate: {latitude: 47.6204899, longitude: -122.34923},
+        state_code: 'WA'
+    }
 };

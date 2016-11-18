@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title id="title">Title</title>
+    <title id="title">Seattle Attraction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -11,12 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="indexjQuery.js"></script>
     <script src="index.js"></script>
-    <script src = "data/place-data.js"></script>
+    <script src="data/place-data.js"></script>
     <script src="indexjQuery.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
-
 
 
 <div id="navigation">
@@ -86,7 +85,8 @@
 
             <div class="col-sm-2 col-xs-12">
                 <ul class="nav">
-                    <li><a href="index.html"><img src="Pioneer-Icon.png" alt="teamlogo" width="100px" height="100px"></a></li>
+                    <li><a href="index.html"><img src="Pioneer-Icon.png" alt="teamlogo" width="100px"
+                                                  height="100px"></a></li>
                 </ul>
             </div>
 
@@ -112,57 +112,159 @@
 </div>
 
 <body onload="loadPlaceInformation()">
-  <div class="container">
-    <div class="row">
-       <div class="col-sm-6">
-           
-       </div>
-       <div class="col-sm-6">
-    	  <p id = "name">name of the place</p>
-          <p id = "rating">Overall Rating : </p>
-          <img id = "rating_img_url" src="">
-    	  <p id = "introduction"></p>
-          <a id = "url" href="#" data-content="url"><button class="button">Go Visit</button></a>
-       </div>
+
+<div class="container">
+    <div class="row separateline">
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+
+        <div class="col-sm-4">
+            <h2 class="separateheading" id="name"></h2>
+
+        </div>
+
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
     </div>
-  </div>
+</div>
 
-  <div class="container">
+<div class="container">
+    <div class="row alignitem">
+        <div class="col-sm-6">
+            <img class="img-responsive" id="image_url" src="">
+
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+
+        <div class="col-sm-5" style="text-align: left">
+            <p id="display_address"><b>Address: </b></p>
+            <p id="phone"><b>Phone: </b></p>
+            <p id="website_url"><b>Website: </b></p>
+            <p id="rating"><b>Overall Rating: </b> <img id="rating_img_url" src=""></p>
+            <div style="overflow:hidden; height:300px;resize:none;max-width:100%;">
+                <div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                    <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                            src="https://www.google.com/maps/embed/v1/place?q=Space+Needle,+Seattle,+WA,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+                </div>
+                <a class="embed-map-code" rel="nofollow" href="https://www.interserver-coupons.com"
+                   id="enable-map-data">https://www.interserver-coupons.com</a>
+                <style>#gmap-canvas img {
+                    max-width: none !important;
+                    background: none !important;
+                }</style>
+            </div>
+            <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=c87dcbfe-aa6a-6bd9-23ed-4358715f6f86&c=embed-map-code&u=1479342366"
+                    defer="defer" async="async"></script>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row separateline">
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+
+        <div class="col-sm-4">
+            <h2 class="separateheading" id="intro_name">About </h2>
+
+        </div>
+
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row alignitem">
+        <div class="col-sm-12" style="text-align: left">
+            <p id="introduction"></p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row separateline">
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+
+        <div class="col-sm-4">
+            <h2 class="separateheading">Hear What They Say</h2>
+
+        </div>
+
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row alignitem">
+        <div class="col-sm-2">
+            <img id="snippet_image_url" src="">
+
+        </div>
+        <div class="col-sm-4">
+            <p id="user_rating">This user rating: <img id="user_rating_image_url" src=""></p>
+
+        </div>
+        <div class="col-sm-6">
+            <p id="user_excerpt">This user review</p>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row separateline">
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+
+        <div class="col-sm-4">
+            <h2 class="separateheading">Explore Nearby</h2>
+
+        </div>
+
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
     <div class="row">
-       <div class="col-sm-5">
-           <p id = "user_rating">This user rating: </p>
-           <img id = "user_rating_image_url" src="">
-       </div>
-       <div class="col-sm-7">
-           <p id = "user_excerpt">This user review</p>
-           <img id = "snippet_image_url" src="">
-           <img id = "image_url" src="">
-           <p id = "location">Will update later</p>
-       </div>
-     </div>
-   </div>
+        <div class="col-sm-6">
+            <h4>Hotel</h4>
 
-   <div class="container">
-     <div class="row">
-        <div class="col-sm-4">
-           <div style="overflow:hidden; height:300px;resize:none;max-width:100%;"><div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Space+Needle,+Seattle,+WA,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="embed-map-code" rel="nofollow" href="https://www.interserver-coupons.com" id="enable-map-data">https://www.interserver-coupons.com</a><style>#gmap-canvas img{max-width:none!important;background:none!important;}</style></div><script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=c87dcbfe-aa6a-6bd9-23ed-4358715f6f86&c=embed-map-code&u=1479342366" defer="defer" async="async"></script>
         </div>
-        <div class="col-sm-4">
-           
+
+        <div class="col-sm-6">
+            <h4>Food</h4>
+
         </div>
-        <div class="col-sm-4">
-           
-        </div>
-     </div>
-   </div>
+    </div>
+</div>
 
 <footer>
     <div class="container9">
         <div class="left">
             <div class="row footer-icon">
-            	<img src="Pioneer-Icon.png"style="height:45px"  class="img-responsive" alt="">
-            	<p>Seattle Pioneer</p>
-   	    </div>
+                <img src="Pioneer-Icon.png" style="height:45px" class="img-responsive" alt="">
+                <p>Seattle Pioneer</p>
+            </div>
             <div class="sitemap">
                 <a href="#">Welcome</a>
                 <a href="#">Things to do</a>
