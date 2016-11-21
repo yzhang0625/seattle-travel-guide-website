@@ -18,5 +18,5 @@ function loadPlaceInformation() {
 }
 
 function selectTargetPlace() {
-    return spaceNeedle;
+    return spaceNeedleYelp;
 }
