@@ -11,6 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <link id="pagestyle" rel="stylesheet" type="text/css" href="subtitle.css">
     <script src="indexjQuery.js"></script>
+    <script src="index.js"></script>
+    <script src="data/yelp-places-data.js"></script>
+    <script src="data/data-all.js"></script>
 </head>
 
 <style>
@@ -122,12 +125,11 @@
 
     <div class="container-fluid">
         <div class="row rowcontent">
-            <div class="col-sm-7" id="sam-pic">
-            </div>
+            <a href="place.html"><div class="col-sm-7" id="sam-pic" onclick="setDisplay('artMuseumYelp')"></div></a>
             <div class="col-sm-5" id="col-sm-5-text">
                 <p><a class="hilt" href="http://www.seattleartmuseum.org/" target="_blank">The Seattle Art Museum</a>(commonly
                     known as "SAM") is an art museum located in Seattle, Washington, USA. It maintains three major
-                    facilities: its main museum in downtown Seattle; the Seattle Asian Art Museum (SAAM) in Volunteer
+                    facilities: its main museum in downtown Seattle; the Seattle Asian Art Museum (SAM) in Volunteer
                     Park on Capitol Hill, and the Olympic Sculpture Park on the central Seattle waterfront, which opened
                     on January 20, 2007. Admission to the sculpture park is always free. Admission to the other
                     facilities is free on the first Thursday of each month; SAM also offers free admission the first
@@ -138,8 +140,7 @@
 
     <div class="container-fluid">
         <div class="row rowcontent">
-            <div class="col-sm-7" id="para-pic">
-            </div>
+            <a href="place.html"><div class="col-sm-7" id="para-pic" onclick="setDisplay('paramountTheatreYelp')"></div></a>
             <div class="col-sm-5" id="col-sm-5-text">
                 <p><a class="hilt" href="https://www.stgpresents.org/paramount" target="_blank">The Paramount
                     Theatre</a> is a 2,807-seat performing arts venue located at 9th Avenue and Pine Street in Seattle,
@@ -154,8 +155,7 @@
 
     <div class="container-fluid">
         <div class="row rowcontent">
-            <div class="col-sm-7" id="emp-pic">
-            </div>
+            <a href="place.html"><div class="col-sm-7" id="emp-pic" onclick="setDisplay('empYelp')"></div></a>
             <div class="col-sm-5" id="col-sm-5-text">
                 <p><a class="hilt" href="http://www.empmuseum.org/" target="_blank">EMP Museum</a> is a nonprofit
                     museum, dedicated to contemporary popular culture. EMP Museum was founded by Microsoft co-founder
@@ -171,7 +171,7 @@
 
     <div class="container-fluid">
         <div class="row rowcontent">
-            <div class="col-sm-7" id="chihu-pic"></div>
+            <a href="place.html"><div class="col-sm-7" id="chihu-pic" onclick="setDisplay('glassMusiumYelp')"></div></a>
             <div class="col-sm-5" id="col-sm-5-text">
                 <p><a class="hilt" href="https://www.chihulygardenandglass.com/" target="_blank">Chihuly Garden and
                     Glass</a> is an exhibit in the Seattle Center showcasing the studio glass of Dale Chihuly. The
