@@ -11,6 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <link id="pagestyle" rel="stylesheet" type="text/css" href="subtitle.css">
     <script src="indexjQuery.js"></script>
+    <script src="index.js"></script>
+    <script src="data/yelp-places-data.js"></script>
+    <script src="data/data-all.js"></script>
 </head>
 
 <style>
@@ -121,8 +124,7 @@
 
     <div class="container-fluid">
         <div class="row rowcontent">
-            <div class="col-sm-7" id="child-pic">
-            </div>
+            <a href="place.html"><div class="col-sm-7" id="child-pic" onclick="setDisplay('childMuseumYelp')"></div></a>
             <div class="col-sm-5" id="col-sm-5-text">
                 <p><a class="hilt" href="http://thechildrensmuseum.org/" target="_blank">The Seattle Children's
                     Museum</a> in Seattle is located on the lowest floor of the Center House at the Seattle Center.
@@ -136,8 +138,7 @@
 
     <div class="container-fluid">
         <div class="row rowcontent">
-            <div class="col-sm-7" id="zoo-pic">
-            </div>
+            <a href="place.html"><div class="col-sm-7" id="zoo-pic" onclick="setDisplay('zooYelp')"></div></a>
             <div class="col-sm-5" id="col-sm-5-text">
                 <p><a class="hilt" href="http://www.zoo.org/" target="_blank">Woodland Park Zoo</a> is a zoological
                     garden located in the Phinney Ridge neighborhood of Seattle, Washington.Occupying the western half
@@ -153,8 +154,7 @@
 
     <div class="container-fluid">
         <div class="row rowcontent">
-            <div class="col-sm-7" id="aqua-pic">
-            </div>
+            <a href="place.html"><div class="col-sm-7" id="aqua-pic" onclick="setDisplay('aquariumYelp')"></div></a>
             <div class="col-sm-5" id="col-sm-5-text">
                 <p><a class="hilt" href="http://www.seattleaquarium.org/" target="_blank">The Seattle Aquarium</a> is a
                     public aquarium opened in 1977 and located on Pier 59 on the Elliott Bay waterfront in Seattle,
@@ -169,8 +169,7 @@
 
     <div class="container-fluid">
         <div class="row rowcontent">
-            <div class="col-sm-7" id="flight-pic">
-            </div>
+            <a href="place.html"><div class="col-sm-7" id="flight-pic" onclick="setDisplay('flightMuseumYelp')"></div></a>
             <div class="col-sm-5" id="col-sm-5-text">
                 <p><a class="hilt" href="http://www.museumofflight.org/" target="_blank">The Museum of Flight</a> is a
                     private non-profit air and space museum in the northwest United States. It is located at the

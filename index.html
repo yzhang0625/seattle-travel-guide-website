@@ -11,8 +11,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <link id="pagestyle" rel="stylesheet" type="text/css" href="index.css">
     <script src="indexjQuery.js"></script>
+    <script src="index.js"></script>
+    <script src="data/yelp-places-data.js"></script>
+    <script src="data/data-all.js"></script>
 </head>
-
 
 <body>
 
@@ -236,9 +238,13 @@
                         1933.</p>
                 </li>
 
-                <li><img class="top img-responsive"
+                <li><a href="place.html"><img class="top img-responsive"
                          src="http://cdn.c.photoshelter.com/img-get/I0000FjK.C9MaLyY/s/750/750/Seattle-Art-Museum-Russell-Investments-Center-First-Avenue-4150-3483.jpg"
-                         alt="Seattle Art Museum" width="100%"></li>
+                         alt="Seattle Art Museum" width="100%"
+                         onclick="setDisplay('artMuseumYelp')">
+                    </a>
+                </li>
+
             </ul>
 
         </div>
@@ -271,9 +277,12 @@
                             markets in the United States.</p>
                     </li>
 
-                    <li><img class="top img-responsive"
+                    <li><a href="place.html"><img class="top img-responsive"
                              src="http://www.travelingninetofiver.com/ninetofiverwp/wp-content/uploads/2015/11/Seattle-Pike-Place-Market-Produce-Neon.jpg"
-                             alt="Pike Place Market" width="100%"></li>
+                             alt="Pike Place Market" width="100%"
+                             onclick="setDisplay('pikeMarketYelp')">
+                        </a>
+                    </li>
                 </ul>
 
             </div>
@@ -286,9 +295,11 @@
                             Seattle.</p>
                     </li>
 
-                    <li><img class="top img-responsive"
+                    <li><a href="place.html"><img class="top img-responsive"
                              src="https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/9278/CMS/Home_slider_images/MtRainierphoto_1200x400.jpg"
-                             alt="Seattle Mountain Rainier" width="100%"></li>
+                             alt="Seattle Mountain Rainier" width="100%" onclick="setDisplay('rainierYelp')">
+                        </a>
+                    </li>
                 </ul>
 
             </div>
@@ -341,7 +352,7 @@
 
         <div class="col-sm-3" id="item">
             <a href="place.html"><img src="http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/istock_000008381799_small.jpg"
-                 style="height:230px" class="img-responsive" alt=""></a>
+                 style="height:230px" class="img-responsive" alt="" onclick="setDisplay('spaceNeedleYelp')"></a>
             <h2>Space Needle</h2>
             <p>A landmark of the Pacific Northwest, and an icon of Seattle.</p>
         </div>
