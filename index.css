@@ -110,7 +110,7 @@ ul {
 .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #99CCBF;
+    background-color: grey;
     border: 0;
     font-size: 16px !important;
     letter-spacing: 2px;
@@ -192,6 +192,9 @@ ul {
     padding-bottom: 42.85%;
 }
 
+.separateheading {
+    color: gray;
+}
 
 /*-------------------------------------------- style for Yang -----------------------------------------*/
 
