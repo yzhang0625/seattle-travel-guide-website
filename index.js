@@ -32,8 +32,8 @@ function loadPlaceInformation() {
 
                 document.getElementById("hotelName1").innerHTML = displayHotels[1].name;
                 document.getElementById("hotel_1_image_url").src = displayHotels[1].image_url;
-                document.getElementById("hotel_1_url").href = displayHotels[0].url;
-                document.getElementById("hotel_1_rating_image_url").src = displayHotels[0].rating_img_url;
+                document.getElementById("hotel_1_url").href = displayHotels[1].url;
+                document.getElementById("hotel_1_rating_image_url").src = displayHotels[1].rating_img_url;
 
                 document.getElementById("hotelName2").innerHTML = displayHotels[2].name;
                 document.getElementById("hotel_2_image_url").src = displayHotels[2].image_url;
@@ -153,4 +153,29 @@ function getDisplayItems(items, callback) {
     shuffle(items);
     callback([items[0],items[1],items[2]]);
 }
+
+/**
+*
+* Angular-js for Hotel page display
+*/
+/**
+ *
+ *
+ */
+
+
+
+angular.module('myApp', []).controller('namesCtrl', function($scope) {
+    var places = [spaceNeedleYelp, pikeMarketYelp, uwYelp, startbucksYelp,
+        sanJuanYelp, olympicParkYelp, southLakeUnionYelp, rainierYelp,
+        childMuseumYelp, zooYelp, aquariumYelp, flightMuseumYelp,
+        artMuseumYelp, paramountTheatreYelp, empYelp, glassMusiumYelp,
+        stevenPassYelp, seaPlaneYelp, centuryLinkYelp, huskyStatiumYelp]
+    $scope.places = places;
+    $scope.displayThreeItems = function (items) {
+        shuffle(items);
+        return [items[0], items[2], items[3]];
+    };
+});
+
 

@@ -5371,6 +5371,7 @@ var olympicParkYelp = {
                 },
                 "phone": "3604523138",
                 "snippet_text": "Typical B&B style, each bedroom has a different theme. Our room was pleasant and I didn't feel it was overdone necessarily. I actually thought the bedframe...",
+                "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/dI6I9sodY7lid7VwDpr4KQ/ms.jpg",
                 "categories": [
                     [
                         "Hotels",
@@ -5546,6 +5547,7 @@ var olympicParkYelp = {
                 },
                 "phone": "3604522303",
                 "snippet_text": "Pros: The room is clean and the lady that checked us in was very nice. \nCons: The website says there is wi-fi and there wasn't (also little to no cell...",
+                "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/IHV5jCLwL6Fdb4GKjZu4ig/ms.jpg",
                 "categories": [
                     [
                         "Hotels",
@@ -7701,6 +7703,7 @@ var rainierYelp = {
                     ]
                 ],
                 "phone": "5035812444",
+                "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/dI6I9sodY7lid7VwDpr4KQ/ms.jpg",
                 "snippet_text": "This hotel looks like a prop from a 90's horror flick, but it has all the comforts of home. You wouldn't know it by looking at it, but it is surprisingly...",
                 "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/XGytoRkwWtyYobfkR2R-1w/ms.jpg",
                 "display_phone": "+1-503-581-2444",
@@ -7825,6 +7828,7 @@ var rainierYelp = {
                         "hotels"
                     ]
                 ],
+                "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/lOyq-SRlfjdvppDF0aaJdQ/ms.jpg",
                 "phone": "5035885423",
                 "snippet_text": "Place changed names and has cleaned up a bit, but sketchy area.",
                 "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/WbC_PzpFGGNAb0QIA7vhWg/ms.jpg",
@@ -7924,6 +7928,7 @@ var rainierYelp = {
                 "phone": "5035561850",
                 "snippet_text": "Not bad, they have avoid lunch special.  Good food for Rainier.",
                 "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/RzhVKMu4Ans6rjDUrch8oA/ms.jpg",
+                "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/IHV5jCLwL6Fdb4GKjZu4ig/ms.jpg",
                 "display_phone": "+1-503-556-1850",
                 "rating_img_url_large": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png",
                 "id": "jiu-chang-restaurant-rainier",
@@ -11805,6 +11810,7 @@ var flightMuseumYelp = {
                     ]
                 ],
                 "display_phone": "+1-206-241-0066",
+                "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/rRqkFkDIR7CqCcGXcFPyDA/ms.jpg",
                 "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
                 "id": "boulevard-motel-seattle",
                 "is_closed": false,
