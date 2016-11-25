@@ -18,7 +18,7 @@
     <script src="data/data-all.js"></script>
 </head>
 
-<body>
+<body onload="loadHomePage()">
 
 
 <!--div class="row">
@@ -243,7 +243,7 @@
                 <li><a href="place.html"><img class="top img-responsive"
                          src="http://cdn.c.photoshelter.com/img-get/I0000FjK.C9MaLyY/s/750/750/Seattle-Art-Museum-Russell-Investments-Center-First-Avenue-4150-3483.jpg"
                          alt="Seattle Art Museum" width="100%"
-                         onclick="setDisplay('artMuseumYelp')">
+                         onclick="savePlaceDisplay('artMuseumYelp')">
                     </a>
                 </li>
 
@@ -282,7 +282,7 @@
                     <li><a href="place.html"><img class="top img-responsive"
                              src="http://www.travelingninetofiver.com/ninetofiverwp/wp-content/uploads/2015/11/Seattle-Pike-Place-Market-Produce-Neon.jpg"
                              alt="Pike Place Market" width="100%"
-                             onclick="setDisplay('pikeMarketYelp')">
+                             onclick="savePlaceDisplay('pikeMarketYelp')">
                         </a>
                     </li>
                 </ul>
@@ -299,7 +299,7 @@
 
                     <li><a href="place.html"><img class="top img-responsive"
                              src="https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/9278/CMS/Home_slider_images/MtRainierphoto_1200x400.jpg"
-                             alt="Seattle Mountain Rainier" width="100%" onclick="setDisplay('rainierYelp')">
+                             alt="Seattle Mountain Rainier" width="100%" onclick="savePlaceDisplay('rainierYelp')">
                         </a>
                     </li>
                 </ul>
@@ -354,7 +354,7 @@
 
         <div class="col-sm-3" id="item">
             <a href="place.html"><img src="http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/istock_000008381799_small.jpg"
-                 style="height:230px" class="img-responsive" alt="" onclick="setDisplay('spaceNeedleYelp')"></a>
+                 style="height:230px" class="img-responsive" alt="" onclick="savePlaceDisplay('spaceNeedleYelp')"></a>
             <h2>Space Needle</h2>
             <p>A landmark of the Pacific Northwest, and an icon of Seattle.</p>
         </div>
@@ -381,6 +381,76 @@
 <div id="youtubevideo" class="container">
     <div class="embed-responsive embed-responsive-21by9">
         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/coklW-xcWMk" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row separateline">
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+
+        <div class="col-sm-4">
+            <h2 class="separateheading">Places You May Like</h2>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row separateline">
+        <div class="col-sm-4">
+            <h4 id="like_0"></h4>
+            <a id = "like_url_0" href="" onclick="onclickPlace('like_0')"><img id="likeImage_0" style="height:230px" src=""></a>
+        </div>
+
+        <div class="col-sm-4">
+            <h4 id="like_1"></h4>
+            <a id = "like_url_1" href="" onclick="onclickPlace('like_1')"><img id="likeImage_1" style="height:230px" src=""></a>
+        </div>
+
+        <div class="col-sm-4">
+            <h4 id="like_2"></h4>
+            <a id = "like_url_2" href="" onclick="onclickPlace('like_2')"><img id="likeImage_2" style="height:230px" src=""></a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row separateline">
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+
+        <div class="col-sm-4">
+            <h2 class="separateheading">Your Recent Views</h2>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row separateline">
+        <div class="col-sm-4">
+            <h4 id="recentView_0"></h4>
+            <img id="recentViewImage_0" style="height:230px" src="">
+        </div>
+
+        <div class="col-sm-4">
+            <h4 id="recentView_1"></h4>
+            <img id="recentViewImage_1" style="height:230px" src="">
+        </div>
+
+        <div class="col-sm-4">
+            <h4 id="recentView_2"></h4>
+            <img id="recentViewImage_2" style="height:230px" src="">
+        </div>
     </div>
 </div>
 
