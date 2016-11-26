@@ -319,27 +319,20 @@ function loadHomePage() {
     if (userRecentViews[0] !== null) {
         document.getElementById("recentView_0").innerHTML = reference(userRecentViews[0]).name;
         document.getElementById("recentViewImage_0").src = reference(userRecentViews[0]).image_url;
+        document.getElementById("view_0").href = "place.html";
     }
 
     if (userRecentViews[1] !== null) {
         document.getElementById("recentView_1").innerHTML = reference(userRecentViews[1]).name;
         document.getElementById("recentViewImage_1").src = reference(userRecentViews[1]).image_url;
+        document.getElementById("view_1").href = "place.html";
     }
 
     if (userRecentViews[2] !== null) {
         document.getElementById("recentView_2").innerHTML = reference(userRecentViews[2]).name;
         document.getElementById("recentViewImage_2").src = reference(userRecentViews[2]).image_url;
+        document.getElementById("view_2").href = "place.html";
     }
-
-    /*
-    document.getElementById("recentView_0").innerHTML = reference(userRecentViews[0]).name;
-    document.getElementById("recentView_1").innerHTML = reference(userRecentViews[1]).name;
-    document.getElementById("recentView_2").innerHTML = reference(userRecentViews[2]).name;
-
-    document.getElementById("recentViewImage_0").src = reference(userRecentViews[0]).image_url;
-    document.getElementById("recentViewImage_1").src = reference(userRecentViews[1]).image_url;
-    document.getElementById("recentViewImage_2").src = reference(userRecentViews[2]).image_url;
-    */
 
 }
 
@@ -373,12 +366,26 @@ function getHighestClick(userClickTimes){
 
 function onclickPlace(buttonName) {
     var likeArr = JSON.parse(localStorage.getItem("placeYouMayLike"));
+    var recentViews = JSON.parse(localStorage.getItem("UserRecentViews"));
     var obj = {
         "like_0": likeArr[0],
         "like_1": likeArr[1],
-        "like_2": likeArr[2]
+        "like_2": likeArr[2],
+        "view_0": recentViews[0],
+        "view_1": recentViews[1],
+        "view_2": recentViews[2]
     };
     localStorage.setItem("targetPlace", obj[buttonName]);
     console.log("change local storage to " + obj[buttonName]);
 
+}
+
+function isSummer() {
+    var d = new Date();
+    var month = d.getMonth();
+    if (month > 3 && month < 10)  {
+        return true;
+    } else {
+        return false;
+    }
 }
