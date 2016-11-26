@@ -152,7 +152,7 @@ ul {
 .arrow-center {
         position: absolute;
         left: 0;
-        top: 50%;
+        top: 45%;
         width: 100%;
         text-align: center;
 }
@@ -223,6 +223,8 @@ ul {
 .textalignleft {
         text-align: left;
 }
+
+
 
 /*-------------------------------------------- style for Yang -----------------------------------------*/
 
