@@ -295,6 +295,7 @@ function loadHomePage() {
         var target = getHighestClick(userClickTimes);
         console.log(target);
         var arr = getSimilarPlaces(target);
+        shuffle(arr);
 
         localStorage.setItem("placeYouMayLike", JSON.stringify(arr));
 
