@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Transportation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="index.css">
+    <script src="indexjQuery.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body onload="pageOnload()">
+
+<div id="navigation">
+    <nav class="navbar navbar-default hidden-sm hidden-md hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#homegif">Home</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Things to do
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="signature.html">Signature Place</a></li>
+                            <li><a href="outdoor.html">Outdoor</a></li>
+                            <li><a href="familyfun.html">Family Fun</a></li>
+                            <li><a href="art.html">Arts & Culture</a></li>
+                            <li><a href="sport.html">Game & Sports</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="food.html">Foods & Drinks</a></li>
+
+                    <li><a href="hotel.html">Hotels & Stay</a></li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Transportation
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="transportation.html">Airport</a></li>
+                            <li><a href="transportation.html">Ferry</a></li>
+                            <li><a href="transportation.html">Bus</a></li>
+                            <li><a href="transportation.html">Link Light Rail</a></li>
+                            <li><a href="transportation.html">Sounder Train</a></li>
+                            <li><a href="transportation.html">Streetcar</a></li>
+
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar">
+        <div class="row alignitem">
+            <div class="col-sm-5">
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Things to do
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="signature.html">Signature Place</a></li>
+                            <li><a href="outdoor.html">Outdoor</a></li>
+                            <li><a href="familyfun.html">Family Fun</a></li>
+                            <li><a href="art.html">Arts & Culture</a></li>
+                            <li><a href="sport.html">Game & Sports</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="food.html">Foods & Drinks</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-2 col-xs-12">
+                <ul class="nav">
+                    <li><a href="index.html"><img src="Pioneer-Icon.png" alt="teamlogo" width="100px" height="100px"></a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-5">
+                <ul class="nav navbar-nav navbar-left hidden-xs">
+                    <li><a href="hotel.html">Hotels & Stay</a></li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Transportation
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="transportation.html">Airport</a></li>
+                            <li><a href="transportation.html">Ferry</a></li>
+                            <li><a href="transportation.html">Bus</a></li>
+                            <li><a href="transportation.html">Link Light Rail</a></li>
+                            <li><a href="transportation.html">Sounder Train</a></li>
+                            <li><a href="transportation.html">Streetcar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row separateline">
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+
+        <div class="col-sm-4">
+            <h2 class="separateheading">Travel in Seattle</h2>
+
+        </div>
+
+        <div class="col-sm-4">
+            <div class="inner"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row maintransportation">
+        <div class="col-sm-2 col-xs-6">
+            <input type="radio" class="option" onclick="formselected()" value="airport" name="roles">
+                <div class="container-transportation">
+                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-airport.jpg"
+                         alt="airport"
+                         width=100%>
+                    <div class="item-transportation">
+                        <h5><b>Sea-Tac Airport</b></h5>
+                    </div>
+                </div>
+            </input>
+
+        </div>
+
+        <div class="col-sm-2 col-xs-6">
+            <input type="radio" class="option" onclick="formselected()" value="ferry" name="roles">
+                <div class="container-transportation">
+                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-ferry.jpg" alt="ferry"
+                         width=100%>
+                    <div class="item-transportation">
+                        <h5><b>Seattle Ferry</b></h5>
+                    </div>
+                </div>
+            </input>
+
+        </div>
+
+        <div class="col-sm-2 col-xs-6">
+            <input type="radio" class="option" onclick="formselected()" class="option" value="bus" name="roles">
+                <div class="container-transportation">
+                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-bus.jpg" alt="bus"
+                         width=100%>
+                    <div class="item-transportation">
+                        <h5><b>Metro Transit</b></h5>
+                    </div>
+                </div>
+            </input>
+        </div>
+
+        <div class="col-sm-2 col-xs-6">
+            <input type="radio" class="option" onclick="formselected()" class="option" value="linklightrail" name="roles">
+                <div class="container-transportation">
+                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-linklightrail.jpg"
+                         alt="linklightrail"
+                         width=100%>
+                    <div class="item-transportation">
+                        <h5><b>Link Light Rail</b></h5>
+                    </div>
+                </div>
+            </input>
+
+        </div>
+
+        <div class="col-sm-2 col-xs-6">
+            <input type="radio" class="option" onclick="formselected()" class="option" value="soundertrain" name="roles">
+                <div class="container-transportation">
+                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-soundertrain.jpg"
+                         alt="soundertrain"
+                         width=100%>
+                    <div class="item-transportation">
+                        <h5><b>Sounder Train</b></h5>
+                    </div>
+                </div>
+            </input>
+
+        </div>
+
+        <div class="col-sm-2 col-xs-6">
+            <input type="radio" class="option" onclick="formselected()" class="option" value="streetcar" name="roles">
+                <div class="container-transportation">
+                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-streetcar.jpg"
+                         alt="Streetcar"
+                         width=100% onclick="formselected()">
+                    <div class="item-transportation">
+                        <h5><b>Streetcar</b></h5>
+                    </div>
+                </div>
+            </input>
+
+        </div>
+
+    </div>
+
+    <div class="main_content">
+
+        <div id="airport" class="row maintransportation">
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" src="img%20for%20transportation/small-airport.jpg" alt="airport"
+                     width=100%>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 textalignleft">
+                <h3><b>Seattle–Tacoma International Airport</b></h3>
+                <br>
+                <p>Seattle–Tacoma International Airport (IATA: SEA, ICAO: KSEA, FAA LID: SEA) (Sea-Tac Airport or
+                    Sea-Tac)
+                    is the largest airport in the Pacific Northwest region of the United States. It is in the
+                    eponymous city of SeaTac, Washington, about twelve miles south of downtown Seattle and is the
+                    primary
+                    airport for the Seattle metropolitan area.</p>
+                <p><b>Website:</b> <a href="https://www.portseattle.org/Sea-Tac">https://www.portseattle.org/Sea-Tac</a>
+                </p>
+                <p><b>Address:</b> 17801 International Blvd. Seattle, WA 98158 ​</p>
+                <p><b>Phone:</b> (206)-787-5388 or (800)-544-1965​</p>
+
+            </div>
+        </div>
+
+        <div id="ferry" class="row maintransportation">
+
+            <div class="col-xs-12 col-sm-6 textalignleft">
+                <h3><b>Washington State Ferries</b></h3>
+                <br>
+                <p>Washington State Ferries (WSF) is a government agency that operates automobile and passenger ferry
+                    service in the U.S. state of Washington as part of the Washington State Department of
+                    Transportation. It
+                    runs ten routes serving 20 terminals located around Puget Sound and in the San Juan Islands,
+                    designated
+                    as part of the state highway system. The agency maintains the largest fleet of ferries in the United
+                    States at 22 vessels, carrying 23 million passengers in 2014. As of 2014, it was the largest ferry
+                    operator in the United States, and the fourth-largest ferry system in the world.</p>
+                <p><b>Website:</b> <a href="http://www.wsdot.wa.gov/ferries/">http://www.wsdot.wa.gov/ferries/</a></p>
+                <p><b>Address:</b> 801 Alaskan Way, Pier 52, Seattle, WA 98104 ​</p>
+                <p><b>Phone:</b> (206)-464-6400​</p>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" src="img%20for%20transportation/small-ferry.jpg" alt="ferry"
+                     width=100%>
+            </div>
+        </div>
+
+        <div id="bus" class="row maintransportation">
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" src="img%20for%20transportation/small-bus.jpg" alt="bus"
+                     width=100%>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 textalignleft">
+                <h3><b>King County Metro Transit</b></h3>
+                <br>
+                <p>King County Metro, officially the King County Department of Transportation Metro Transit Division or
+                    Metro for short, is the public transit authority of King County, Washington. It began operations on
+                    January 1, 1973, but can trace its roots to Seattle Transit, founded in 1939, and Overlake Transit
+                    Service, founded in 1927.
+
+                    <br><br>
+                    Metro is also contracted to operate and maintain Sound Transit’s Central Link light rail line and
+                    eight
+                    of the agency's Sound Transit Express bus routes along with the Seattle Streetcar lines owned by the
+                    City of Seattle.</p>
+                <p><b>Website:</b> <a href="http://metro.kingcounty.gov/">http://metro.kingcounty.gov/</a></p>
+                <p><b>Address:</b> 201 S. Jackson St. Seattle, WA 98104 ​</p>
+                <p><b>Phone:</b> (206)-553-3000</p>
+
+            </div>
+        </div>
+
+        <div id="linklightrail" class="row maintransportation">
+
+            <div class="col-xs-12 col-sm-6 textalignleft">
+                <h3><b>Link Light Rail</b></h3>
+                <br>
+                <p>The Link light rail is a rapid transit rail system in the Seattle metropolitan area area of
+                    Washington
+                    State, being designed, built and operated by the region's mass transportation agency, Sound Transit.
+                    Currently the system consists of two, separate lines: Tacoma Link, a streetcar line operating in
+                    downtown Tacoma and Central Link, a light rail line operating between the University of Washington
+                    in
+                    Seattle and the Angle Lake station in SeaTac, Washington. Extensions are being planned or
+                    constructed
+                    that will bring light rail north to Lynnwood, east to Redmond and south to Kent and Des Moines.</p>
+                <p><b>Website:</b> <a href="http://www.soundtransit.org/Schedules/Link-light-rail">http://www.soundtransit.org/Schedules/Link-light-rail</a>
+                </p>
+                <p><b>Phone:</b> (888)-889-6368;​</p>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" src="img%20for%20transportation/small-linklightrail.jpg"
+                     alt="linklightrail"
+                     width=100%>
+            </div>
+        </div>
+
+        <div id="soundertrain" class="row maintransportation">
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" src="img%20for%20transportation/small-soundertrain.jpg"
+                     alt="soundertrain"
+                     width=100%>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 textalignleft">
+                <h3><b>Seattle Sounder Train</b></h3>
+                <br>
+                <p>Sounder commuter rail (reporting mark SDRX) is a regional rail service operated by BNSF on behalf of
+                    Sound Transit.Service operates Monday through Friday during peak hours from Seattle, Washington,
+                    north to Everett and south to Lakewood. As of 2015, schedules serve the traditional peak commutes,
+                    with
+                    most trains running inbound to Seattle in the morning and outbound in the afternoon. Two daily
+                    round-trips run the "reverse commute" to and from Tacoma.Additional Sounder trains operate on some
+                    Saturdays and Sundays for travel to and from Seahawks and Sounders games at CenturyLink Field and
+                    Mariners games at Safeco Field. Both stadiums are a short walk from King Street Station.</p>
+                <p><b>Website:</b> <a href="http://www.soundtransit.org/sounder">http://www.soundtransit.org/sounder</a>
+                </p>
+                <p><b>Address:</b> King Street Station: 301 S. Jackson St., Seattle, WA 98104 ​</p>
+                <p><b>Phone:</b> (888)-889-6368​</p>
+
+            </div>
+        </div>
+
+        <div id="streetcar" class="row maintransportation">
+
+            <div class="col-xs-12 col-sm-6 textalignleft">
+                <h3><b>Washington State Ferries</b></h3>
+                <br>
+                <p>The Seattle Streetcar is a system of two modern streetcar lines operating in the city of Seattle,
+                    Washington since 2007. The streetcar lines are owned by the Seattle Department of Transportation and
+                    operated by King County Metro.The South Lake Union Streetcar is a 1.3-mile (2.1 km), seven-stop line
+                    serving the South Lake Union neighborhood of Seattle. Its route goes from the Westlake hub to the
+                    Fred
+                    Hutchinson Cancer Research Center in South Lake Union. Transfers can be made at Westlake to many bus
+                    routes on the surface streets,
+                    and to some bus routes and Link Light Rail in the Downtown Seattle Transit Tunnel's Westlake
+                    Station.
+                    The line opened to the public in 2007. In 2008, about half a million people rode the Seattle
+                    Streetcar,
+                    averaging out to about 1,400 riders per day.</p>
+                <p><b>Website:</b> <a href="http://seattlestreetcar.org/">http://seattlestreetcar.org/</a></p>
+                <p><b>Address:</b> 201 S. Jackson St. Seattle, WA 98104 ​</p>
+                <p><b>Phone:</b> (206)-553-3000</p>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" src="img%20for%20transportation/small-streetcar.jpg"
+                     alt="Streetcar"
+                     width=100%>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <div class="container9">
+        <div class="left">
+            <div class="row footer-icon">
+                <img src="Pioneer-Icon.png" style="height:45px" class="img-responsive" alt="">
+                <p>Seattle Pioneer</p>
+            </div>
+            <div class="sitemap">
+                <a href="#">Welcome</a>
+                <a href="#">Things to do</a>
+                <a href="#">Food&Drink</a>
+                <a href="#">Hotel</a>
+                <a href="#">Transportation</a>
+            </div>
+            <p>Seattle Pioneer © 2016</p>
+        </div>
+        <div class="center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p class="info">Terry Ave, Seattle</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p class="info">888-888-8888</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p class="info">xxx@xxx.com</p>
+            </div>
+        </div>
+        <div class="right">
+            <span>About the website</span>
+            <p class="intro">A website that people can get information about seattle.</p>
+            <div class="icon">
+                <a href="#">
+                    <i class="fa fa-facebook"></i></a>
+                <a href="#">
+                    <i class="fa fa-twitter"></i></a>
+                <a href="#">
+                    <i class="fa fa-linkedin"></i></a>
+                <a href="#">
+                    <i class="fa fa-github"></i></a>
+            </div>
+        </div>
+</footer>
+
+</body>
+</html>

@@ -196,6 +196,34 @@ ul {
         color: gray;
 }
 
+.container-transportation {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 5%;
+}
+
+.img-opacity{
+        opacity: 0.6;
+}
+
+.item-transportation{
+        position: absolute;
+        top: 35%;
+        text-align: center;
+        width: 80%;
+        color: black;
+        border: 3px inset black;
+        margin-left: 10%;
+}
+
+.maintransportation {
+        margin-bottom: 5%;
+}
+
+.textalignleft {
+        text-align: left;
+}
+
 /*-------------------------------------------- style for Yang -----------------------------------------*/
 
 .navi-yang ul {

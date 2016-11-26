@@ -179,3 +179,31 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 });
 
 
+/* Nan for Transporation page */
+
+function formselected() {
+    var checkedValue = $('.option:checked').val();
+    var checkedValueId = "#" + checkedValue
+    $("html, body").delay(100).animate({scrollTop: $(checkedValueId).offset().top - 250 }, 1000);
+
+    if (typeof (Storage) !== "undefined") {
+        localStorage.setItem("role", checkedValue);
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+
+function pageOnload() {
+    setTimeout(function () {
+        if ($(document).scrollTop() !== 0) $("html, body").animate({scrollTop: 0}, 'fast');
+
+    }, 300);
+
+    var role_intent = localStorage.getItem("role");
+    var sectionSelector = "#" + role_intent;
+    var container = $("body").find(sectionSelector)
+    $('.main_content').prepend(container);
+}
+
+
+
