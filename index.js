@@ -126,10 +126,12 @@ function getDisplay(callback) {
             target = huskyStatiumYelp;
             break;
     }
+    saveUserClickPlaceTimes(localStorage.getItem("targetPlace"));
+    saveUserRecentView(localStorage.getItem("targetPlace"));
     callback(target);
 }
 
-function setDisplay(place) {
+function savePlaceDisplay(place) {
     if (typeof(Storage) !== "undefined") {
         // Store
         localStorage.setItem("targetPlace", place);
@@ -155,16 +157,8 @@ function getDisplayItems(items, callback) {
 }
 
 /**
-*
-* Angular-js for Hotel page display
+* Angular-js for Hotel and Food page display
 */
-/**
- *
- *
- */
-
-
-
 angular.module('myApp', []).controller('namesCtrl', function($scope) {
     var places = [spaceNeedleYelp, pikeMarketYelp, uwYelp, startbucksYelp,
         sanJuanYelp, olympicParkYelp, southLakeUnionYelp, rainierYelp,
@@ -177,6 +171,224 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
         return [items[0], items[2], items[3]];
     };
 });
+
+/**
+ * User profile data local storage logic
+ */
+function saveUserClickPlaceTimes(place) {
+    if (typeof(Storage) !== "undefined") {
+        var key = place;
+        if (!localStorage.getItem("UserClickEachPlaceTimes")) {
+            var obj = {};
+            obj[key] = 1;
+            localStorage.setItem("UserClickEachPlaceTimes", JSON.stringify(obj));
+        } else if (!JSON.parse(localStorage.getItem("UserClickEachPlaceTimes"))[key]){
+            var obj = JSON.parse(localStorage.getItem("UserClickEachPlaceTimes"));
+            obj[key] = 1;
+            localStorage.setItem("UserClickEachPlaceTimes", JSON.stringify(obj));
+        } else {
+            var obj = JSON.parse(localStorage.getItem("UserClickEachPlaceTimes"));
+            obj[key] += 1;
+            localStorage.setItem("UserClickEachPlaceTimes", JSON.stringify(obj));
+        }
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
+}
+
+function saveUserRecentView(place) {
+    if (typeof(Storage) !== "undefined") {
+        var recentViews = localStorage.getItem("UserRecentViews");
+        if (!recentViews) {    // no user view local storage before
+            var obj = [];
+            obj.unshift(place);
+            localStorage.setItem("UserRecentViews", JSON.stringify(obj));
+        } else {    // have local storage before
+            var obj = JSON.parse(recentViews);
+
+            if (obj.indexOf(place) > -1) {  //place exists in array, remove it
+                obj.splice(obj.indexOf(place), 1);
+            }
+
+            obj.unshift(place);
+            var newArray = [obj[0],obj[1],obj[2]];
+            localStorage.setItem("UserRecentViews", JSON.stringify(newArray));
+        }
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
+}
+
+function reference(place) {
+    var target;
+    switch (place) {
+        case "spaceNeedleYelp":
+            target = spaceNeedleYelp;
+            break;
+        case "pikeMarketYelp":
+            target = pikeMarketYelp;
+            break;
+        case "uwYelp":
+            target = uwYelp;
+            break;
+        case "startbucksYelp":
+            target = startbucksYelp;
+            break;
+        case "sanJuanYelp":
+            target = sanJuanYelp;
+            break;
+        case "olympicParkYelp":
+            target = olympicParkYelp;
+            break;
+        case "southLakeUnionYelp":
+            target = southLakeUnionYelp;
+            break;
+        case "rainierYelp":
+            target = rainierYelp;
+            break;
+        case "childMuseumYelp":
+            target = childMuseumYelp;
+            break;
+        case "zooYelp":
+            target = zooYelp;
+            break;
+        case "aquariumYelp":
+            target = aquariumYelp;
+            break;
+        case "flightMuseumYelp":
+            target = flightMuseumYelp;
+            break;
+        case "artMuseumYelp":
+            target = artMuseumYelp;
+            break;
+        case "paramountTheatreYelp":
+            target = paramountTheatreYelp;
+            break;
+        case "empYelp":
+            target = empYelp;
+            break;
+        case "glassMusiumYelp":
+            target = glassMusiumYelp;
+            break;
+        case "stevenPassYelp":
+            target = stevenPassYelp;
+            break;
+        case "seaPlaneYelp":
+            target = seaPlaneYelp;
+            break;
+        case "centuryLinkYelp":
+            target = centuryLinkYelp;
+            break;
+        case "huskyStatiumYelp":
+            target = huskyStatiumYelp;
+            break;
+    }
+    return target;
+}
+
+function loadHomePage() {
+
+
+    //place you may like
+    var userClickTimes = JSON.parse(localStorage.getItem("UserClickEachPlaceTimes"));
+    if(userClickTimes) {
+        var target = getHighestClick(userClickTimes);
+        console.log(target);
+        var arr = getSimilarPlaces(target);
+        shuffle(arr);
+        localStorage.setItem("placeYouMayLike", JSON.stringify(arr));
+
+        console.log(arr);
+        document.getElementById("like_0").innerHTML = reference(arr[0]).name;
+        document.getElementById("like_1").innerHTML = reference(arr[1]).name;
+        document.getElementById("like_2").innerHTML = reference(arr[2]).name;
+
+        document.getElementById("likeImage_0").src = reference(arr[0]).image_url;
+        document.getElementById("likeImage_1").src = reference(arr[1]).image_url;
+        document.getElementById("likeImage_2").src = reference(arr[2]).image_url;
+
+        document.getElementById("like_url_0").href = "place.html";
+        document.getElementById("like_url_1").href = "place.html";
+        document.getElementById("like_url_2").href = "place.html";
+
+    }
+
+
+    //recent view places
+    var userRecentViews = JSON.parse(localStorage.getItem("UserRecentViews"));
+    if (userRecentViews[0] !== null) {
+        document.getElementById("recentView_0").innerHTML = reference(userRecentViews[0]).name;
+        document.getElementById("recentViewImage_0").src = reference(userRecentViews[0]).image_url;
+        document.getElementById("view_0").href = "place.html";
+    }
+
+    if (userRecentViews[1] !== null) {
+        document.getElementById("recentView_1").innerHTML = reference(userRecentViews[1]).name;
+        document.getElementById("recentViewImage_1").src = reference(userRecentViews[1]).image_url;
+        document.getElementById("view_1").href = "place.html";
+    }
+
+    if (userRecentViews[2] !== null) {
+        document.getElementById("recentView_2").innerHTML = reference(userRecentViews[2]).name;
+        document.getElementById("recentViewImage_2").src = reference(userRecentViews[2]).image_url;
+        document.getElementById("view_2").href = "place.html";
+    }
+
+}
+
+function getSimilarPlaces(place) {
+    var types = {
+        signature: ["spaceNeedleYelp","pikeMarketYelp","uwYelp","startbucksYelp"],
+        outdoors: ["sanJuanYelp","olympicParkYelp","southLakeUnionYelp","rainierYelp"],
+        family:["childMuseumYelp","zooYelp","aquariumYelp","flightMuseumYelp"],
+        art:["artMuseumYelp","paramountTheatreYelp","empYelp","glassMusiumYelp"],
+        game:["stevenPassYelp","seaPlaneYelp","centuryLinkYelp","huskyStatiumYelp"]
+    };
+    for (var key in types) {
+        var arr = types[key];
+        if (arr.indexOf(place) > -1) {
+            return arr;
+        }
+    }
+}
+
+function getHighestClick(userClickTimes){
+    var highestCount = 0;
+    var target = "spaceNeedleYelp";
+    for(var key in userClickTimes) {
+        if (userClickTimes[key] > highestCount) {
+            target = key;
+            highestCount = userClickTimes[key];
+        }
+    }
+    return target;
+}
+
+function onclickPlace(buttonName) {
+    var likeArr = JSON.parse(localStorage.getItem("placeYouMayLike"));
+    var recentViews = JSON.parse(localStorage.getItem("UserRecentViews"));
+    var obj = {
+        "like_0": likeArr[0],
+        "like_1": likeArr[1],
+        "like_2": likeArr[2],
+        "view_0": recentViews[0],
+        "view_1": recentViews[1],
+        "view_2": recentViews[2]
+    };
+    localStorage.setItem("targetPlace", obj[buttonName]);
+    console.log("change local storage to " + obj[buttonName]);
+
+}
+
+function isSummer() {
+    var d = new Date();
+    var month = d.getMonth();
+    if (month > 3 && month < 10)  {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
 /* Nan for Transporation page */
@@ -204,6 +416,3 @@ function pageOnload() {
     var container = $("body").find(sectionSelector)
     $('.main_content').prepend(container);
 }
-
-
-
