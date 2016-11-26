@@ -2,6 +2,8 @@
  * Signature places
  */
 var spaceNeedleYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.2893592796295!2d-122.35147144956088!3d47.62050627908345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490151f4ed5b7f9%3A0xdb2ba8689ed0920d!2sSpace+Needle!5e0!3m2!1sen!2sus!4v1480143242289" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -1125,6 +1127,8 @@ var spaceNeedleYelp = {
 };
 
 var pikeMarketYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5379.688313111962!2d-122.34658110429588!3d47.60971991633053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab2c151d6cb%3A0x60441d5f633e9f1c!2sPike+Place+Market%2C+Seattle%2C+WA!5e0!3m2!1sen!2sus!4v1480142179462" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -2272,6 +2276,8 @@ var pikeMarketYelp = {
 };
 
 var uwYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.497287020904!2d-122.30571394955915!3d47.655335079085816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014929d8535eb%3A0x6b742c7901b82ba3!2sUniversity+of+Washington!5e0!3m2!1sen!2sus!4v1480142285040" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',   
+
     "hotel": {
         "region": {
             "span": {
@@ -3398,6 +3404,8 @@ var uwYelp = {
 };
 
 var startbucksYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.8266874336373!2d-122.34474234956127!3d47.61005957908265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab2c538c70b%3A0x11ebfd9ae22719cf!2sStarbucks!5e0!3m2!1sen!2sus!4v1480142350457" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -4542,6 +4550,8 @@ var startbucksYelp = {
  * Outdoor places
  */
 var sanJuanYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686296.7078266271!2d-124.20203387212202!3d47.784424140336775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f7c0e3729a853%3A0x6095b0616fd36617!2sSan+Juan+Island!5e0!3m2!1sen!2sus!4v1480143030523" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',  
+
     "hotel": {
         "region": {
             "span": {
@@ -5238,6 +5248,8 @@ var sanJuanYelp = {
 };
 
 var olympicParkYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686296.7078266271!2d-124.20203387212202!3d47.784424140336775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548e8009cf0472d1%3A0x2087abb27d7951!2sOlympic+National+Park!5e0!3m2!1sen!2sus!4v1480143016876" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',  
+
     "hotel": {
         "region": {
             "span": {
@@ -6251,6 +6263,8 @@ var olympicParkYelp = {
 };
 
 var southLakeUnionYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21511.63826427!2d-122.35431459117042!3d47.62701021134442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490153bc67a5d5b%3A0xa91e9c10a999a3be!2sSouth+Lake+Union%2C+Seattle%2C+WA!5e0!3m2!1sen!2sus!4v1480142991411" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',  
+
     "hotel": {
         "region": {
             "span": {
@@ -7374,6 +7388,8 @@ var southLakeUnionYelp = {
 };
 
 var rainierYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349207.4730843701!2d-121.99580390248319!3d46.85976343485237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490cde6eec94b87%3A0x5cf4a1fb4f91a418!2sMount+Rainier+National+Park!5e0!3m2!1sen!2sus!4v1480142972874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -8336,6 +8352,8 @@ var rainierYelp = {
  * Family fun
  */
 var childMuseumYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.2436961268463!2d-122.35307804956084!3d47.62139397908347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901545d5e902b1%3A0x42bac64c65dff2e3!2sSeattle+Children&#39;s+Museum!5e0!3m2!1sen!2sus!4v1480143061325" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -9474,6 +9492,8 @@ var childMuseumYelp = {
 };
 
 var zooYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.8325866657538!2d-122.35296064955853!3d47.668248579086644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014494aaed4c9%3A0x7c622dc1f941a8b2!2sWoodland+Park+Zoo!5e0!3m2!1sen!2sus!4v1480143101663" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -10603,6 +10623,8 @@ var zooYelp = {
 };
 
 var aquariumYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.961155930066!2d-122.3451936495615!3d47.60744497908256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab268bdafd3%3A0xb965b026b3e615b1!2sSeattle+Aquarium!5e0!3m2!1sen!2sus!4v1480143123028" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -11760,6 +11782,8 @@ var aquariumYelp = {
 };
 
 var flightMuseumYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.5582832305545!2d-122.29857804956599!3d47.51799297907667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490423922701547%3A0x1a492897619baaa!2sThe+Museum+of+Flight!5e0!3m2!1sen!2sus!4v1480143139054" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -12842,6 +12866,8 @@ var flightMuseumYelp = {
  * Art
  */
 var artMuseumYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.945187253487!2d-122.34081824956148!3d47.607755479082556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab22579184b%3A0x7b64e8eea04a8dc4!2sSeattle+Art+Museum!5e0!3m2!1sen!2sus!4v1480143171112" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -13993,6 +14019,8 @@ var artMuseumYelp = {
 };
 
 var paramountTheatreYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.64945674377!2d-122.33395294956124!3d47.61350547908301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab550f06875%3A0x6bae683a839fc887!2sParamount+Theatre!5e0!3m2!1sen!2sus!4v1480143184710" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -15144,6 +15172,8 @@ var paramountTheatreYelp = {
 };
 
 var empYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.239148808968!2d-122.35031854956085!3d47.62148237908348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901546f87aca63%3A0xd1e929cd1149d812!2sEMP+Museum!5e0!3m2!1sen!2sus!4v1480143197493" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -16285,6 +16315,8 @@ var empYelp = {
 };
 
 var glassMusiumYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.2864426595656!2d-122.35266004956091!3d47.62056297908345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901545d66b3b55%3A0x7b41db287e00e687!2sChihuly+Garden+and+Glass!5e0!3m2!1sen!2sus!4v1480143212978" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -17430,6 +17462,8 @@ var glassMusiumYelp = {
  * Game sports
  */
 var stevenPassYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21466.838598235023!2d-121.10605011714404!3d47.73576981182506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905d2bd90ba40d%3A0xf2d39d5a73b9767!2sStevens+Pass!5e0!3m2!1sen!2sus!4v1480146986024" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -18163,6 +18197,8 @@ var stevenPassYelp = {
 };
 
 var seaPlaneYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5377.565596388434!2d-122.33809930280877!3d47.63035321633603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549015247336197b%3A0xc8396595520e0b4d!2sSeattle+Seaplanes!5e0!3m2!1sen!2sus!4v1480147081213" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -19286,6 +19322,8 @@ var seaPlaneYelp = {
 };
 
 var centuryLinkYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.5933183230813!2d-122.33383334919118!3d47.595151779081704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906aa3b9f1182b%3A0xa636cd513bba22dc!2sCenturyLink+Field!5e0!3m2!1sen!2sus!4v1480147123533" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {
@@ -20413,6 +20451,8 @@ var centuryLinkYelp = {
 };
 
 var huskyStatiumYelp = {
+    "gmap_canvas": '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.7552138010738!2d-122.30376864918883!3d47.65032347908546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901494a93b8947%3A0x184b516c15bccbba!2sHusky+Stadium!5e0!3m2!1sen!2sus!4v1480147163094" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+
     "hotel": {
         "region": {
             "span": {

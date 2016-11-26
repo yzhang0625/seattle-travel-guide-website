@@ -55,7 +55,7 @@ function loadPlaceInformation() {
                 document.getElementById("food_2_url").href = displayFoods[2].url;
                 document.getElementById("food_2_rating_image_url").src = displayFoods[2].rating_img_url;
 
-                //TODO add map information
+                document.getElementById("gmap_canvas").innerHTML = target.gmap_canvas;
 
             });
         });
