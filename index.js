@@ -211,8 +211,9 @@ function saveUserRecentView(place) {
             }
 
             obj.unshift(place);
-            var newArray = [obj[0],obj[1],obj[2]];
-            localStorage.setItem("UserRecentViews", JSON.stringify(newArray));
+
+            var obj = obj.length > 3? [obj[0],obj[1],obj[2]] : obj;
+            localStorage.setItem("UserRecentViews", JSON.stringify(obj));
         }
     } else {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
@@ -293,12 +294,10 @@ function loadHomePage() {
     var userClickTimes = JSON.parse(localStorage.getItem("UserClickEachPlaceTimes"));
     if(userClickTimes) {
         var target = getHighestClick(userClickTimes);
-        console.log(target);
         var arr = getSimilarPlaces(target);
         shuffle(arr);
         localStorage.setItem("placeYouMayLike", JSON.stringify(arr));
 
-        console.log(arr);
         document.getElementById("like_0").innerHTML = reference(arr[0]).name;
         document.getElementById("like_1").innerHTML = reference(arr[1]).name;
         document.getElementById("like_2").innerHTML = reference(arr[2]).name;
@@ -311,11 +310,47 @@ function loadHomePage() {
         document.getElementById("like_url_1").href = "place.html";
         document.getElementById("like_url_2").href = "place.html";
 
+    } else {
+        var arr = ["spaceNeedleYelp","pikeMarketYelp","uwYelp","startbucksYelp"];
+        shuffle(arr);
+        localStorage.setItem("placeYouMayLike", JSON.stringify(arr));
+
+        document.getElementById("like_0").innerHTML = reference(arr[0]).name;
+        document.getElementById("like_1").innerHTML = reference(arr[1]).name;
+        document.getElementById("like_2").innerHTML = reference(arr[2]).name;
+
+        document.getElementById("likeImage_0").src = reference(arr[0]).image_url;
+        document.getElementById("likeImage_1").src = reference(arr[1]).image_url;
+        document.getElementById("likeImage_2").src = reference(arr[2]).image_url;
+
+        document.getElementById("like_url_0").href = "place.html";
+        document.getElementById("like_url_1").href = "place.html";
+        document.getElementById("like_url_2").href = "place.html";
     }
 
 
     //recent view places
     var userRecentViews = JSON.parse(localStorage.getItem("UserRecentViews"));
+    if (!localStorage.getItem("UserRecentViews")) {
+        document.getElementById("recentViewPanel").style.display = "none";
+        document.getElementById("recentViewTitle").style.display = "none";
+    } else if (userRecentViews.length < 3) {
+        document.getElementById("recentViewPanel").style.display = "none";
+        document.getElementById("recentViewTitle").style.display = "none";
+    } else {
+        document.getElementById("recentView_0").innerHTML = reference(userRecentViews[0]).name;
+        document.getElementById("recentViewImage_0").src = reference(userRecentViews[0]).image_url;
+        document.getElementById("view_0").href = "place.html";
+
+        document.getElementById("recentView_1").innerHTML = reference(userRecentViews[1]).name;
+        document.getElementById("recentViewImage_1").src = reference(userRecentViews[1]).image_url;
+        document.getElementById("view_1").href = "place.html";
+
+        document.getElementById("recentView_2").innerHTML = reference(userRecentViews[2]).name;
+        document.getElementById("recentViewImage_2").src = reference(userRecentViews[2]).image_url;
+        document.getElementById("view_2").href = "place.html";
+    }
+    /*
     if (userRecentViews[0] !== null) {
         document.getElementById("recentView_0").innerHTML = reference(userRecentViews[0]).name;
         document.getElementById("recentViewImage_0").src = reference(userRecentViews[0]).image_url;
@@ -333,6 +368,7 @@ function loadHomePage() {
         document.getElementById("recentViewImage_2").src = reference(userRecentViews[2]).image_url;
         document.getElementById("view_2").href = "place.html";
     }
+    */
 
 }
 
