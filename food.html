@@ -123,11 +123,32 @@
 </div>
 
 <div ng-app="myApp" ng-controller="namesCtrl">
+    <button onclick="showspaceneedle()">Space Needle</button>
+    <button onclick="showpikeplacemarket()">Pike Place Market</button>
+    <button onclick="showuw()">University of Washington</button>
+    <button onclick="showstarbucks()">The First Starbucks</button>
+    <button onclick="showsanjuanisland()">San Juan Island</button>
+    <button onclick="showlakeunion()">Lake Union</button>
+    <button onclick="showmountrainier()">Mount Rainier National Park</button>
+    <button onclick="showseattlechildrenmuseum()">Seattle Children Museum</button>
+    <button onclick="showwoodlandparkzoo()">Woodland Park Zoo</button>
+    <button onclick="showseattleaquarium()">Seattle Aquarium</button>
+    <button onclick="showthemuseumofflight()">The Museum of Flight</button>
+    <button onclick="showseattleartmuseum()">Seattle Art Museum</button>
+    <button onclick="showparamounttheatre()">Paramount Theatre</button>
+    <button onclick="showempmuseum()">EMP Museum</button>
+    <button onclick="showchihulygardenandglass()">Chihuly Garden and Glass</button>
+    <button onclick="showstevenspassskykomish()">Stevens Pass</button>
+    <button onclick="showseattleseaplanes()">Seattle Seaplanes</button>
+    <button onclick="showcenturylinkfield()">Century Link Field</button>
+    <button onclick="showhuskystadium()">Husky Stadium</button>
+    <button onclick="showolympicnationalpark()">Olympic National Park</button>
+
     <ul>
-        <li ng-repeat="place in places">
+        <li id="{{place.id}}" ng-repeat="place in places">
             <h1> {{ place.name }} </h1>
             <ul class="row">
-                <li class="col-sm-4" ng-repeat="food in place.food.businesses">
+                <li class="col-sm-6" ng-repeat="food in place.food.businesses">
                     <h4> {{ food.name }} </h4>
                     <a href="{{ food.url }}"><img src="{{ food.image_url}}"></a>
                     <img src="{{ food.rating_img_url_large }}">
