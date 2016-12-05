@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title id="title">Seattle Attraction</title>
+    <title id="title">Hotels in Seattle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -15,8 +15,6 @@
     <script src="data/yelp-hotel-data.js"></script>
     <script src="data/yelp-food-data.js"></script>
     <script src="data/data-all.js"></script>
-    <script src="indexjQuery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
@@ -122,44 +120,133 @@
     </div>
 </div>
 
+<div class="container">
+    <img class="img-responsive text-center" src="hotel.jpg">
+</div>
+
 
 
 <div ng-app="myApp" ng-controller="namesCtrl">
-    <button onclick="showspaceneedle()">Space Needle</button>
-    <button onclick="showpikeplacemarket()">Pike Place Market</button>
-    <button onclick="showuw()">University of Washington</button>
-    <button onclick="showstarbucks()">The First Starbucks</button>
-    <button onclick="showsanjuanisland()">San Juan Island</button>
-    <button onclick="showlakeunion()">Lake Union</button>
-    <button onclick="showmountrainier()">Mount Rainier National Park</button>
-    <button onclick="showseattlechildrenmuseum()">Seattle Children Museum</button>
-    <button onclick="showwoodlandparkzoo()">Woodland Park Zoo</button>
-    <button onclick="showseattleaquarium()">Seattle Aquarium</button>
-    <button onclick="showthemuseumofflight()">The Museum of Flight</button>
-    <button onclick="showseattleartmuseum()">Seattle Art Museum</button>
-    <button onclick="showparamounttheatre()">Paramount Theatre</button>
-    <button onclick="showempmuseum()">EMP Museum</button>
-    <button onclick="showchihulygardenandglass()">Chihuly Garden and Glass</button>
-    <button onclick="showstevenspassskykomish()">Stevens Pass</button>
-    <button onclick="showseattleseaplanes()">Seattle Seaplanes</button>
-    <button onclick="showcenturylinkfield()">Century Link Field</button>
-    <button onclick="showhuskystadium()">Husky Stadium</button>
-    <button onclick="showolympicnationalpark()">Olympic National Park</button>
+    <div class="container">
 
-    <ul>
-        <li id="{{place.id}}" ng-repeat="place in places">
-            <h1> {{ place.id }} </h1>
-            <ul class="row">
-                <li class="col-sm-6" ng-repeat="hotel in place.hotel.businesses">
-                    <h4> {{ hotel.name }} </h4>
-                    <a href="{{ hotel.url }}"><img src="{{ hotel.image_url}}"></a>
-                    <img src="{{ hotel.rating_img_url_large }}">
-                    <p> {{hotel.snippet_text }} </p>
-                    <p> {{hotel.location.display_address[0]}}, {{hotel.location.display_address[1]}}, {{hotel.location.display_address[2]}} </p>
-                </li>
-            </ul>
-        </li>
-    </ul>
+        <div class="row_with_text_left selectionstyle">
+            <div class="col-sm-12">
+                <h4>Find Hotel Nearby Your Favorite Place</h4>
+            </div>
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showspaceneedle()">  Space Needle</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showpikeplacemarket()">  Pike Place Market</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showuw()">  University of Washington</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showstarbucks()">  The First Starbucks</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showsanjuanisland()">  San Juan Island</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showlakeunion()">  Lake Union</input>
+
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showmountrainier()">  Mount Rainier National Park</input>
+
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showseattlechildrenmuseum()">  Seattle Children Museum</input>
+
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showwoodlandparkzoo()">  Woodland Park Zoo</input>
+
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showseattleaquarium()">  Seattle Aquarium</input>
+
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showthemuseumofflight()">  The Museum of Flight</input>
+
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showseattleartmuseum()">  Seattle Art Museum</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showparamounttheatre()">  Paramount Theatre</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showempmuseum()">  EMP Museum</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showchihulygardenandglass()">  Chihuly Garden and Glass</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showstevenspassskykomish()">  Stevens Pass</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showseattleseaplanes()">  Seattle Seaplanes</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showcenturylinkfield()">  Century Link Field</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showhuskystadium()">  Husky Stadium</input>
+            </div>
+
+            <div class="col-sm-3 col-xs-3">
+                <input type="radio" name="selection" onclick="showolympicnationalpark()">  Olympic National Park</input>
+            </div>
+
+        </div>
+
+
+        <div>
+            <div id="{{place.id}}" ng-repeat="place in places">
+                <h1 style="text-align: center"> Hotel Nearby {{ place.name }} </h1>
+                <div class="row">
+                    <div class="col-sm-6" ng-repeat="hotel in place.hotel.businesses">
+                        <div class="row_with_text_left hotelstyle">
+                            <div class="col-sm-4">
+                                <a href="{{ hotel.url }}"><img class="img-responsive" src="{{ hotel.image_url}}"></a>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h4> {{ hotel.name }} </h4>
+                                <img class="img-responsive" src="{{ hotel.rating_img_url }}">
+                                <p> <b>Address:</b> {{hotel.location.display_address[0]}}, {{hotel.location.display_address[1]}}, {{hotel.location.display_address[2]}} </p>
+                            </div>
+
+                            <p> <b>Comments:</b> {{hotel.snippet_text }} </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
