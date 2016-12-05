@@ -14,7 +14,16 @@
     <script src="index.js"></script>
 </head>
 
-<body onload="pageOnload()">
+<body onload="pageOnload()" class="bodyposition">
+
+<div class="text-center totopicon">
+
+    <a class="up-arrow" href="#hotelimage" data-toggle="tooltip" title="To TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+        <p>To Top</p>
+    </a>
+
+</div>
 
 <div id="navigation">
     <nav class="navbar navbar-default hidden-sm hidden-md hidden-lg">
@@ -86,7 +95,8 @@
 
             <div class="col-sm-2 col-xs-12">
                 <ul class="nav">
-                    <li><a href="index.html"><img src="Pioneer-Icon.png" alt="teamlogo" width="80px" height="80px"></a></li>
+                    <li><a href="index.html"><img src="Pioneer-Icon.png" alt="teamlogo" width="80px" height="80px"></a>
+                    </li>
                 </ul>
             </div>
 
@@ -130,84 +140,86 @@
 </div>
 
 <div class="container">
-    <div class="row maintransportation">
+    <div class="row maintransportationselection">
         <div class="col-sm-2 col-xs-6">
             <input type="radio" class="option" onclick="formselected()" value="airport" name="roles">
-                <div class="container-transportation">
-                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-airport.jpg"
-                         alt="airport"
-                         width=100%>
-                    <div class="item-transportation">
-                        <h5><b>Sea-Tac Airport</b></h5>
-                    </div>
-                </div>
+            <div class="container-transportation">
+                <img class="img-responsive img-opacity" src="img%20for%20transportation/small-airport.jpg"
+                     alt="airport"
+                     width=100%>
+            </div>
+            <div class="item-transportation">
+                <h5><b>Sea-Tac Airport</b></h5>
+            </div>
             </input>
 
         </div>
 
         <div class="col-sm-2 col-xs-6">
             <input type="radio" class="option" onclick="formselected()" value="ferry" name="roles">
-                <div class="container-transportation">
-                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-ferry.jpg" alt="ferry"
-                         width=100%>
-                    <div class="item-transportation">
-                        <h5><b>Seattle Ferry</b></h5>
-                    </div>
+            <div class="container-transportation">
+                <img class="img-responsive img-opacity" src="img%20for%20transportation/small-ferry.jpg" alt="ferry"
+                     width=100%>
+                <div class="item-transportation">
+                    <h5><b>Seattle Ferry</b></h5>
                 </div>
+            </div>
             </input>
 
         </div>
 
         <div class="col-sm-2 col-xs-6">
             <input type="radio" class="option" onclick="formselected()" class="option" value="bus" name="roles">
-                <div class="container-transportation">
-                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-bus.jpg" alt="bus"
-                         width=100%>
-                    <div class="item-transportation">
-                        <h5><b>Metro Transit</b></h5>
-                    </div>
+            <div class="container-transportation">
+                <img class="img-responsive img-opacity" src="img%20for%20transportation/small-bus.jpg" alt="bus"
+                     width=100%>
+                <div class="item-transportation">
+                    <h5><b>Metro Transit</b></h5>
                 </div>
+            </div>
             </input>
         </div>
 
         <div class="col-sm-2 col-xs-6">
-            <input type="radio" class="option" onclick="formselected()" class="option" value="linklightrail" name="roles">
-                <div class="container-transportation">
-                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-linklightrail.jpg"
-                         alt="linklightrail"
-                         width=100%>
-                    <div class="item-transportation">
-                        <h5><b>Link Light Rail</b></h5>
-                    </div>
+            <input type="radio" class="option" onclick="formselected()" class="option" value="linklightrail"
+                   name="roles">
+            <div class="container-transportation">
+                <img class="img-responsive img-opacity" src="img%20for%20transportation/small-linklightrail.jpg"
+                     alt="linklightrail"
+                     width=100%>
+                <div class="item-transportation">
+                    <h5><b>Link Light Rail</b></h5>
                 </div>
+            </div>
             </input>
 
         </div>
 
         <div class="col-sm-2 col-xs-6">
-            <input type="radio" class="option" onclick="formselected()" class="option" value="soundertrain" name="roles">
-                <div class="container-transportation">
-                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-soundertrain.jpg"
-                         alt="soundertrain"
-                         width=100%>
-                    <div class="item-transportation">
-                        <h5><b>Sounder Train</b></h5>
-                    </div>
+            <input type="radio" class="option" onclick="formselected()" class="option" value="soundertrain"
+                   name="roles">
+            <div class="container-transportation">
+                <img class="img-responsive img-opacity" src="img%20for%20transportation/small-soundertrain.jpg"
+                     alt="soundertrain"
+                     width=100%>
+                <div class="item-transportation">
+                    <h5><b>Sounder Train</b></h5>
                 </div>
+            </div>
             </input>
 
         </div>
 
         <div class="col-sm-2 col-xs-6">
             <input type="radio" class="option" onclick="formselected()" class="option" value="streetcar" name="roles">
-                <div class="container-transportation">
-                    <img class="img-responsive img-opacity" src="img%20for%20transportation/small-streetcar.jpg"
-                         alt="Streetcar"
-                         width=100% onclick="formselected()">
-                    <div class="item-transportation">
-                        <h5><b>Streetcar</b></h5>
-                    </div>
+            <div class="container-transportation">
+                <img class="img-responsive img-opacity" src="img%20for%20transportation/small-streetcar.jpg"
+                     alt="Streetcar"
+                     width=100% onclick="formselected()">
+                <div class="item-transportation">
+                    <h5><b>Streetcar</b></h5>
                 </div>
+            </div>
             </input>
 
         </div>
