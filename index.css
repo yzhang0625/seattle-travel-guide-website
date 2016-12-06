@@ -185,9 +185,9 @@ ul {
     border-bottom: 2px inset #99CCBF;
 }
 
-.separateline {
+/*.separateline {
     margin-top: 3%;
-}
+}*/
 
 .alignitem {
     align-items: center;
@@ -276,6 +276,58 @@ ul {
     top: 600px;
 }
 
+.slideimage{
+    position: relative;
+}
+
+.slidetitle1 {
+    width: 30%;
+    height:auto;
+    position: absolute;
+    right: 4%;
+    top: 5%;
+    color: #ffffff;
+}
+
+.slidetitle2 {
+    width: 30%;
+    height:auto;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    color: #ffffff;
+}
+
+.slidetitle3 {
+    width: 30%;
+    height:auto;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    color: #ffffff;
+}
+
+.lefticon {
+    width: 10%;
+    height: auto;
+    position: fixed;
+    left: -1.5%;
+    bottom: 5%;
+    z-index: -1;
+}
+
+.righticon {
+    width: 10%;
+    height: auto;
+    position: fixed;
+    right: 1.5%;
+    bottom: 5%;
+    z-index: -1;
+}
+
+.icondisplaynone {
+    display: none;
+}
 /*-------------------------------------------- style for Yang -----------------------------------------*/
 
 .navi-yang ul {
