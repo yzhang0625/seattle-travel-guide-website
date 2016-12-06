@@ -175,6 +175,21 @@ ul {
 }
 
 @media (max-width: 600px) {
+    .arrow-center, .slidetitle1, .slidetitle2, .slidetitle3 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .lefticon{
+        display: none;
+    }
+
+    .righticon{
+        display: none;
+    }
+
     .arrow-center {
         display: none;
     }
@@ -256,7 +271,31 @@ ul {
     .hotelstyle {
         height: 200px;
     }
+
+    .lefticon {
+        width: 10%;
+        height: auto;
+        position: fixed;
+        left: -1.5%;
+        bottom: 5%;
+        z-index: -1;
+    }
+
+    .righticon {
+        width: 10%;
+        height: auto;
+        position: fixed;
+        right: 1.5%;
+        bottom: 5%;
+        z-index: -1;
+    }
+
+    .icondisplaynone {
+        display: none;
+    }
 }
+
+
 
 .selectionstyle {
     border: 2px solid grey;
@@ -307,27 +346,7 @@ ul {
     color: #ffffff;
 }
 
-.lefticon {
-    width: 10%;
-    height: auto;
-    position: fixed;
-    left: -1.5%;
-    bottom: 5%;
-    z-index: -1;
-}
 
-.righticon {
-    width: 10%;
-    height: auto;
-    position: fixed;
-    right: 1.5%;
-    bottom: 5%;
-    z-index: -1;
-}
-
-.icondisplaynone {
-    display: none;
-}
 /*-------------------------------------------- style for Yang -----------------------------------------*/
 
 .navi-yang ul {
