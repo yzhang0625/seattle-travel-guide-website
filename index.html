@@ -437,38 +437,37 @@
         </div>
     </div>
 
+<script>
+$(document).ready(function(){
+    $("img").hover(function(){
+        $(this).css("filter", "blur(0px)");
+        $(this).css("filter", "drop-shadow(8px 8px 10px black)");
+        }, function(){
+        $(this).css("filter", "none");
+    });
+});
+</script>
+
     <div id="planyourtrip" class="plan container">
         <div class="row">
             <div class="col-sm-3" id="item">
-                <img src="https://assets3.thrillist.com/v1/image/1298308/size/tmg-slideshow_l.jpg" style="height:230px"
-                     class="img-responsive" alt="pic1">
-                <h2>Best Burgers</h2>
-                <p>Some of the shops you'll recognize as burger havens</p>
-                <br>
+                <h4>Find more hotel here</h4>
+                <a href="hotel.html"><img src="hotel.jpg" style="height:230px" class="img-responsive" alt="pic1"></a>
             </div>
 
             <div class="col-sm-3" id="item">
-                <img src="https://wheresmybackpack.files.wordpress.com/2013/05/seattle-blue-trees.jpg"
-                     style="height:230px"
-                     class="img-responsive" alt="">
-                <h2>Westlake Center</h2>
-                <p>Indulge in brands you love at the best shopping mall in Seattle</p>
+                <h4>Find more food here</h4>
+                <a href="food.html"><img src="food.jpg" style="height:230px" class="img-responsive" alt="pic2"></a>
             </div>
 
             <div class="col-sm-3" id="item">
-                <img src="https://s-media-cache-ak0.pinimg.com/originals/c9/77/6d/c9776d89ad6861063875850aa962db6b.jpg"
-                     style="height:230px" class="img-responsive" alt="">
-                <h2>Live life float</h2>
-                <p>Seattle Houseboat might be one of the coolest places to stay</p>
+                <h4>Find more hotel here</h4>
+                <a href="hotel.html"><img src="home.jpg" style="height:230px" class="img-responsive" alt="pic3"></a>
             </div>
 
             <div class="col-sm-3" id="item">
-                <a href="place.html"><img
-                        src="http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/istock_000008381799_small.jpg"
-                        style="height:230px" class="img-responsive" alt=""
-                        onclick="savePlaceDisplay('spaceNeedleYelp')"></a>
-                <h2>Space Needle</h2>
-                <p>A landmark of the Pacific Northwest, and an icon of Seattle.</p>
+                <h4>View More</h4>
+                <a href="place.html"><img src="space.jpg" style="height:230px" class="img-responsive" alt="pic4" onclick="savePlaceDisplay('spaceNeedleYelp')"></a>
             </div>
         </div>
     </div>
@@ -545,8 +544,8 @@
                     <p>Seattle Pioneer</p>
                 </div>
                 <div class="sitemap">
-                    <a href="#">Welcome</a>
-                    <a href="#">Things to do</a>
+                    <a href="index.html">Welcome</a>
+                    <a href="signature.html">Things to do</a>
                     <a href="food.html">Food&Drink</a>
                     <a href="hotel.html">Hotel</a>
                     <a href="transportation.html">Transportation</a>
