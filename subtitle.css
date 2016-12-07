@@ -115,6 +115,26 @@
 #col-sm-5-text .hilt:hover{
     color:grey;
 }
+#text1:hover{
+    color:white;
+    background-color:#6ABE83;
+    transition: 1s;
+}
+#text2:hover{
+    color:white;
+    background-color:#7ACFD6;
+    transition: 1s;
+}
+#text3:hover{
+    color:white;
+    background-color:#8A949B;
+    transition: 1s;
+}
+#text4:hover{
+    color:white;
+    background-color:#F06966;
+    transition: 1s;
+}
 
 /*for outdoor page*/
 #sj-pic{
@@ -310,7 +330,9 @@
     justify-content:space-around;
     text-align:center;
 }
+
 .footer-icon{
+    margin-top:0;
     font-size: 20px;
     text-align: center;
     line-height: 42px;
