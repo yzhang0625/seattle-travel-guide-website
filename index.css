@@ -134,8 +134,8 @@ ul {
 }
 
 .dropdown-menu {
-    background-color: #99CCBF;
-    border-color: #99CCBF;
+    background-color: dimgrey;
+    border-color: dimgrey;
     width: 180px;
 }
 
@@ -276,7 +276,7 @@ ul {
         width: 10%;
         height: auto;
         position: fixed;
-        left: -1.5%;
+        left: -0.5%;
         bottom: 5%;
         z-index: -1;
     }
@@ -285,7 +285,7 @@ ul {
         width: 10%;
         height: auto;
         position: fixed;
-        right: 1.5%;
+        right: 0.5%;
         bottom: 5%;
         z-index: -1;
     }
