@@ -418,13 +418,8 @@ ul {
 }
 
 #item img {
-    filter: blur(1.5px);
-    transition-duration: 12s;
-}
-
-#item img:hover {
-    filter: none;
-    filter: drop-shadow(8px 8px 10px grey);
+    filter: blur(1.2px);
+    transition-duration: 2s;
 }
 
 .container9 {
@@ -744,19 +739,6 @@ ul {
 .container {
     margin-top: 40px;
 }
-
-/*.col-sm-6 #name{
-    font-size: 16px;
-    font-weight: 900;
-    padding: 20px;
-    text-align:center;
-    border: 1px solid #4CAF50;
-}
-
-.col-sm-6 #name:hover{
-    background-color: #4CAF50;
-    color: white;
-}*/
 
 
 
