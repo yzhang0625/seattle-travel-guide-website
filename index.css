@@ -105,6 +105,7 @@ ul {
         bottom: -80px;
         padding-top: 80px
     }
+
 }
 
 .navbar {
@@ -346,6 +347,14 @@ ul {
     color: #ffffff;
 }
 
+.place_food, .place_hotel{
+    height: 250px;
+}
+
+.place_food:hover, .place_hotel:hover{
+    border: 2px outset #99CCBF;
+
+}
 
 /*-------------------------------------------- style for Yang -----------------------------------------*/
 
