@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
-                    <h2 class="gifword"><em><b>Explore Seattle</b></em></h2>
+                    <h2 class="gifword"><em><b>Seattle</b></em></h2>
                     <h3 class="gifword_2"><em><b>Let Memories Start Here</b></em></h3>
                     <a class="down-arrow" href="#navigation" data-toggle="tooltip" title="To Home">
                         <span class="glyphicon glyphicon-chevron-down"></span><br>
@@ -80,11 +80,11 @@
 
 
     <div id="lefticon" class="lefticon">
-        <img src="http://old.seattletimes.com/special/centennial/september/art/SpaceNeedle.gif">
+        <a href="place.html"><img src="http://old.seattletimes.com/special/centennial/september/art/SpaceNeedle.gif" alt="spaceneedle" onclick="savePlaceDisplay('spaceNeedleYelp')"></a>
     </div>
 
     <div id="righticon" class="righticon">
-        <img src="http://old.seattletimes.com/special/centennial/september/art/SpaceNeedle.gif">
+        <a href="place.html"><img src="http://old.seattletimes.com/special/centennial/september/art/SpaceNeedle.gif" alt="spaceneedle" onclick="savePlaceDisplay('spaceNeedleYelp')"></a>
     </div>
 
 
@@ -381,43 +381,7 @@
 
     </div>
 
-    <div class="container">
-        <div class="row separateline">
-            <div class="col-sm-4">
-                <div class="inner"></div>
-            </div>
 
-            <div class="col-sm-4">
-                <h2 class="separateheading">Places You May Like</h2>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="inner"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row separateline">
-            <div class="col-sm-4">
-                <h4 id="like_0"></h4>
-                <a id="like_url_0" href="" onclick="onclickPlace('like_0')"><img id="likeImage_0" style="height:230px"
-                                                                                 src=""></a>
-            </div>
-
-            <div class="col-sm-4">
-                <h4 id="like_1"></h4>
-                <a id="like_url_1" href="" onclick="onclickPlace('like_1')"><img id="likeImage_1" style="height:230px"
-                                                                                 src=""></a>
-            </div>
-
-            <div class="col-sm-4">
-                <h4 id="like_2"></h4>
-                <a id="like_url_2" href="" onclick="onclickPlace('like_2')"><img id="likeImage_2" style="height:230px"
-                                                                                 src=""></a>
-            </div>
-        </div>
-    </div>
 
 
     <div class="container">
@@ -468,6 +432,44 @@ $(document).ready(function(){
             <div class="col-sm-3" id="item">
                 <h4>View More</h4>
                 <a href="place.html"><img src="space.jpg" style="height:230px" class="img-responsive" alt="pic4" onclick="savePlaceDisplay('spaceNeedleYelp')"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row separateline">
+            <div class="col-sm-4">
+                <div class="inner"></div>
+            </div>
+
+            <div class="col-sm-4">
+                <h2 class="separateheading">Places You May Like</h2>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row separateline">
+            <div class="col-sm-4">
+                <h4 id="like_0"></h4>
+                <a id="like_url_0" href="" onclick="onclickPlace('like_0')"><img id="likeImage_0" style="height:230px"
+                                                                                 src=""></a>
+            </div>
+
+            <div class="col-sm-4">
+                <h4 id="like_1"></h4>
+                <a id="like_url_1" href="" onclick="onclickPlace('like_1')"><img id="likeImage_1" style="height:230px"
+                                                                                 src=""></a>
+            </div>
+
+            <div class="col-sm-4">
+                <h4 id="like_2"></h4>
+                <a id="like_url_2" href="" onclick="onclickPlace('like_2')"><img id="likeImage_2" style="height:230px"
+                                                                                 src=""></a>
             </div>
         </div>
     </div>
@@ -536,7 +538,7 @@ $(document).ready(function(){
     </div>
 
 
-    <footer>
+    <footer id="footer">
         <div class="container9">
             <div class="left">
                 <div class="row footer-icon">

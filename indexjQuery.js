@@ -18,14 +18,17 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     var carouselpos = $('#myCarousel').offset();
+    var footerpos = $('#footer').offset();
 
     $(window).bind('scroll', function() {
-        if ($(window).scrollTop() < carouselpos.top + 300) {
+        if ($(window).scrollTop() < carouselpos.top + 300 ) {
             $('#lefticon').addClass('icondisplaynone');
             $('#righticon').addClass('icondisplaynone');
+
         } else {
             $('#lefticon').removeClass('icondisplaynone');
             $('#righticon').removeClass('icondisplaynone');
+
         }
     });
 });

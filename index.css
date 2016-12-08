@@ -153,17 +153,17 @@ ul {
 .arrow-center {
     position: absolute;
     left: 0;
-    top: 35%;
+    top: 25%;
     width: 100%;
     text-align: center;
 }
 
 .gifword {
-    font-size: 60px;
+    font-size: 150px;
     color: #ffffff;
-    border: 5px inset white;
     text-align: center;
-    margin-bottom: 30%;
+    align-items: flex-end;
+    margin-bottom: 35%;
 }
 
 .gifword_2 {
@@ -200,10 +200,6 @@ ul {
     margin-top: 31px;
     border-bottom: 2px inset #99CCBF;
 }
-
-/*.separateline {
-    margin-top: 3%;
-}*/
 
 .alignitem {
     align-items: center;
@@ -280,15 +276,17 @@ ul {
         left: -0.5%;
         bottom: 5%;
         z-index: -1;
+
     }
 
     .righticon {
         width: 10%;
         height: auto;
         position: fixed;
-        right: 0.5%;
+        right: 0%;
         bottom: 5%;
         z-index: -1;
+
     }
 
     .icondisplaynone {
@@ -355,6 +353,8 @@ ul {
     border: 2px outset #99CCBF;
 
 }
+
+
 
 /*-------------------------------------------- style for Yang -----------------------------------------*/
 
