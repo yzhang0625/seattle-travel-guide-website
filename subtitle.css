@@ -1,64 +1,68 @@
 .navbar {
-        font-family: Montserrat, sans-serif;
-        margin-bottom: 0;
-        background-color: grey;
-        border: 0;
-        font-size: 16px !important;
-        letter-spacing: 2px;
-        opacity: 1.0;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: dimgrey;
+    border: 0;
+    font-size: 16px !important;
+    letter-spacing: 2px;
+    opacity: 1.0;
 }
 
 .navbar li a, .navbar .navbar-brand {
-        color: #ffffff !important;
+    color: #ffffff !important;
 }
+
 .navbar-nav li a:hover {
-        background-color: black !important;
+    background-color: black !important;
 }
 
 .navbar-default .navbar-toggle {
-        border-color: transparent;
+    border-color: transparent;
 }
 
 .navbar li a {
-        display: block;
+    display: block;
 }
 
 .dropdown-menu {
-        background-color: #99CCBF;
-        border-color: #99CCBF;
-        width: 180px;
+    background-color: dimgrey;
+    border-color: dimgrey;
+    width: 180px;
 }
 
 .dropdown-menu li a:hover {
-        background-color: black;
+    background-color: black;
 }
 
-
 #homegif {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .arrow-center {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 100%;
-        text-align: center;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    text-align: center;
 }
 
 .gifword {
-        font-size: 50px;
-        color: #ffffff;
-        border: 5px inset white;
-        text-align: center;
+    font-size: 150px;
+    color: #ffffff;
+    text-align: center;
+    align-items: flex-end;
+    margin-bottom: 35%;
 }
 
+.gifword_2 {
+    color: #ffffff;
+}
 
 .down-arrow {
-        color: white;
-        font-size: 50px;
+    color: white;
+    font-size: 50px;
 }
 
 @media (max-width: 600px) {
