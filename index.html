@@ -300,79 +300,81 @@
     <div id="recommendation" class="container">
         <div class="row">
             <div class="col-sm-6">
-                <ul class="left-image-effect">
-                    <li>
+                <div class="left-image-effect">
+                    <div class="pcdisplay">
                         <h2 class="zero">Seattle Art Museum</h2>
                         <p class="zero">SAM has been the center for world-class visual arts in the Pacific Northwest
                             since
                             1933.</p>
-                    </li>
+                    </div>
 
-                    <li><a href="place.html"><img class="top img-responsive"
+                    <div><a href="place.html"><img class="top img-responsive"
                                                   src="http://cdn.c.photoshelter.com/img-get/I0000FjK.C9MaLyY/s/750/750/Seattle-Art-Museum-Russell-Investments-Center-First-Avenue-4150-3483.jpg"
                                                   alt="Seattle Art Museum" width="100%"
                                                   onclick="savePlaceDisplay('artMuseumYelp')">
                     </a>
-                    </li>
+                    </div>
 
-                </ul>
+                    <div class="mobiledisplay">
+                        <h4 class="zero">Seattle Art Museum</h4>
+                        <p class="zero">SAM has been the center for world-class visual arts in the Pacific Northwest
+                            since
+                            1933.</p>
+                    </div>
+
+                </div>
 
             </div>
 
             <div class="col-sm-6">
-                <!--div class="preferencesection">
-                    <form>
-                        <p>Please Select your interest: </p>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" value="">Outdoor
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" value="">Family Fun
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" value="">Art & Culture
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" value="">Game & Sports
-                        </label>
-                        <br>
-                        <button>Submit</button>
-                    </form>
-                </div-->
-                <div>
-                    <ul class="right-image-effect">
-                        <li>
+
+
+                    <div class="right-image-effect">
+                        <div class="pcdisplay">
                             <h2 class="zero">Pike Place Market</h2>
                             <p class="zero">Pike Place Market is one of the oldest continuously operated public farmers'
                                 markets in the United States.</p>
-                        </li>
+                        </div>
 
-                        <li><a href="place.html"><img class="top img-responsive"
+                        <div><a href="place.html"><img class="top img-responsive"
                                                       src="http://www.travelingninetofiver.com/ninetofiverwp/wp-content/uploads/2015/11/Seattle-Pike-Place-Market-Produce-Neon.jpg"
                                                       alt="Pike Place Market" width="100%"
                                                       onclick="savePlaceDisplay('pikeMarketYelp')">
                         </a>
-                        </li>
-                    </ul>
+                        </div>
 
-                </div>
+                        <div class="mobiledisplay">
+                            <h4 class="zero">Pike Place Market</h4>
+                            <p class="zero">Pike Place Market is one of the oldest continuously operated public farmers'
+                                markets in the United States.</p>
+                        </div>
+                    </div>
 
-                <div>
-                    <ul class="right-image-effect">
-                        <li>
+
+
+
+                    <div class="right-image-effect">
+                        <div class="pcdisplay">
                             <h2 class="zero">Mountain Rainier</h2>
                             <p class="zero">Mount Rainier National Park - an expansive Washington state reserve
                                 southeast of
                                 Seattle.</p>
-                        </li>
+                        </div>
 
-                        <li><a href="place.html"><img class="top img-responsive"
+                        <div><a href="place.html"><img class="top img-responsive"
                                                       src="https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/9278/CMS/Home_slider_images/MtRainierphoto_1200x400.jpg"
                                                       alt="Seattle Mountain Rainier" width="100%"
                                                       onclick="savePlaceDisplay('rainierYelp')">
                         </a>
-                        </li>
-                    </ul>
+                        </div>
+
+                        <div class="mobiledisplay">
+                            <h4 class="zero">Mountain Rainier</h4>
+                            <p class="zero">Mount Rainier National Park - an expansive Washington state reserve
+                                southeast of
+                                Seattle.</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -456,19 +458,19 @@ $(document).ready(function(){
         <div class="row separateline">
             <div class="col-sm-4">
                 <h4 id="like_0"></h4>
-                <a id="like_url_0" href="" onclick="onclickPlace('like_0')"><img id="likeImage_0" style="height:230px"
+                <a id="like_url_0" href="" onclick="onclickPlace('like_0')"><img class="img-responsive" id="likeImage_0" style="height:230px"
                                                                                  src=""></a>
             </div>
 
             <div class="col-sm-4">
                 <h4 id="like_1"></h4>
-                <a id="like_url_1" href="" onclick="onclickPlace('like_1')"><img id="likeImage_1" style="height:230px"
+                <a id="like_url_1" href="" onclick="onclickPlace('like_1')"><img class="img-responsive" id="likeImage_1" style="height:230px"
                                                                                  src=""></a>
             </div>
 
             <div class="col-sm-4">
                 <h4 id="like_2"></h4>
-                <a id="like_url_2" href="" onclick="onclickPlace('like_2')"><img id="likeImage_2" style="height:230px"
+                <a id="like_url_2" href="" onclick="onclickPlace('like_2')"><img class="img-responsive" id="likeImage_2" style="height:230px"
                                                                                  src=""></a>
             </div>
         </div>
@@ -519,19 +521,19 @@ $(document).ready(function(){
         <div id="recentViewPanel" class="row separateline">
             <div class="col-sm-4">
                 <h4 id="recentView_0"></h4>
-                <a id="view_0" href="" onclick="onclickPlace('view_0')"><img id="recentViewImage_0" style="height:230px"
+                <a id="view_0" href="" onclick="onclickPlace('view_0')"><img class="img-responsive" id="recentViewImage_0" style="height:230px"
                                                                              src=""></a>
             </div>
 
             <div class="col-sm-4">
                 <h4 id="recentView_1"></h4>
-                <a id="view_1" href="" onclick="onclickPlace('view_1')"><img id="recentViewImage_1" style="height:230px"
+                <a id="view_1" href="" onclick="onclickPlace('view_1')"><img class="img-responsive" id="recentViewImage_1" style="height:230px"
                                                                              src=""></a>
             </div>
 
             <div class="col-sm-4">
                 <h4 id="recentView_2"></h4>
-                <a id="view_2" href="" onclick="onclickPlace('view_2')"><img id="recentViewImage_2" style="height:230px"
+                <a id="view_2" href="" onclick="onclickPlace('view_2')"><img class="img-responsive" id="recentViewImage_2" style="height:230px"
                                                                              src=""></a>
             </div>
         </div>

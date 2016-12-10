@@ -23,7 +23,7 @@ ul {
     .left-image-effect p, .left-image-effect h2 {
         color: #fff;
         padding: 10px;
-        left: -20px;
+
         position: relative;
     }
 
@@ -66,12 +66,13 @@ ul {
         float: left;
         margin-right: 20px;
         background-color: gray;
+        margin: 5px 0px;
     }
 
     .right-image-effect p, .right-image-effect h2 {
         color: #fff;
         padding: 8px;
-        left: -20px;
+
         position: relative;
     }
 
@@ -176,8 +177,18 @@ ul {
 }
 
 @media (max-width: 600px) {
-    .arrow-center, .slidetitle1, .slidetitle2, .slidetitle3 {
+    .arrow-center, .slidetitle1, .slidetitle2, .slidetitle3, .pcdisplay {
         display: none;
+    }
+
+    .mobiledisplay {
+        text-align: left;
+    }
+
+    .right-image-effect, .left-image-effect{
+        border: 2px solid grey;
+        margin: 1% 0%;
+        padding: 2% 2%;
     }
 
 }
@@ -194,6 +205,21 @@ ul {
     .arrow-center {
         display: none;
     }
+
+    .pcdisplay {
+        display: none;
+    }
+
+    .mobiledisplay {
+        text-align: left;
+    }
+
+    .right-image-effect, .left-image-effect{
+        border: 2px solid grey;
+        margin: 1% 0%;
+        padding: 2% 2%;
+    }
+
 }
 
 .inner {
@@ -292,6 +318,10 @@ ul {
     .icondisplaynone {
         display: none;
     }
+
+    .mobiledisplay {
+        display: none;
+    }
 }
 
 
@@ -353,6 +383,8 @@ ul {
     border: 2px outset #99CCBF;
 
 }
+
+
 
 
 
